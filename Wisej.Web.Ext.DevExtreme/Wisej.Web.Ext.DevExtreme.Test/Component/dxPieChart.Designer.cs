@@ -1,0 +1,79 @@
+﻿namespace Wisej.Web.Ext.DevExtreme.Test.Component
+{
+	partial class dxPieChart
+	{
+		/// <summary> 
+		/// Required designer variable.
+		/// </summary>
+		private System.ComponentModel.IContainer components = null;
+
+		/// <summary> 
+		/// Clean up any resources being used.
+		/// </summary>
+		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		protected override void Dispose(bool disposing)
+		{
+			if (disposing && (components != null))
+			{
+				components.Dispose();
+			}
+			base.Dispose(disposing);
+		}
+
+		#region Wisej Designer generated code
+
+		/// <summary> 
+		/// Required method for Designer support - do not modify 
+		/// the contents of this method with the code editor.
+		/// </summary>
+		private void InitializeComponent()
+		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxPieChart));
+			this.dxPieChart1 = new Wisej.Web.Ext.DevExtreme.dxPieChart();
+			this.groupBox1.SuspendLayout();
+			this.panel.SuspendLayout();
+			this.SuspendLayout();
+			// 
+			// linkDocs
+			// 
+			this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/PieChart/Series/Overview/";
+			// 
+			// linkAPI
+			// 
+			this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/Data_Visualization_Widgets/d" +
+    "xPieChart/";
+			// 
+			// panel
+			// 
+			this.panel.Controls.Add(this.dxPieChart1);
+			// 
+			// linkDemo
+			// 
+			this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Pie/jQuery/Light/";
+			// 
+			// dxPieChart1
+			// 
+			this.dxPieChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+			this.dxPieChart1.Location = new System.Drawing.Point(21, 19);
+			this.dxPieChart1.Name = "dxPieChart1";
+			this.dxPieChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxPieChart1.Options"))));
+			this.dxPieChart1.Size = new System.Drawing.Size(411, 274);
+			this.dxPieChart1.Text = "dxPieChart1";
+			// 
+			// dxPieChart
+			// 
+			this.Name = "dxPieChart";
+			this.groupBox1.ResumeLayout(false);
+			this.panel.ResumeLayout(false);
+			this.ResumeLayout(false);
+			this.PerformLayout();
+
+		}
+
+		#endregion
+
+		private DevExtreme.dxPieChart dxPieChart1;
+	}
+}
