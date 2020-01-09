@@ -157,9 +157,6 @@
     <EmbeddedResource Include="Component\dxSparkline.resx">
       <DependentUpon>dxSparkline.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxSpeedDialAction.resx">
-      <DependentUpon>dxSpeedDialAction.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Component\dxSwitch.resx">
       <DependentUpon>dxSwitch.cs</DependentUpon>
     </EmbeddedResource>
@@ -418,12 +415,6 @@
     <Compile Include="Component\dxSparkline.Designer.cs">
       <DependentUpon>dxSparkline.cs</DependentUpon>
     </Compile>
-    <Compile Include="Component\dxSpeedDialAction.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxSpeedDialAction.Designer.cs">
-      <DependentUpon>dxSpeedDialAction.cs</DependentUpon>
-    </Compile>
     <Compile Include="Component\dxSwitch.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -499,7 +490,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Wisej.Ext.MaterialDesign">
-      <HintPath>..\..\..\..\2.0\Wisej.Ext.MaterialDesign\bin\Wisej.Ext.MaterialDesign.dll</HintPath>
+      <HintPath>..\..\..\..\2.1\Wisej.Ext.MaterialDesign\bin\Wisej.Ext.MaterialDesign.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Framework">
       <HintPath>..\..\..\..\..\Development\2.1\bin\Wisej.Framework.dll</HintPath>

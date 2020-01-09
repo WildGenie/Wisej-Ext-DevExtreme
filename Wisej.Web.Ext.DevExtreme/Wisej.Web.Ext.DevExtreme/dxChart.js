@@ -27,7 +27,7 @@ this.filterEventData = function (args) {
 			return args.target.data;
 
 		case "legendClick":
-		case "serieClick":
+		case "seriesClick":
 			return args.target.name;
 	}
 };

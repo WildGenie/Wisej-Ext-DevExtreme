@@ -18,3 +18,10 @@
 // FROM ICE TEA GROUP LLC.
 //
 ///////////////////////////////////////////////////////////////////////////////
+
+this.filterEventData = function (args) {
+
+    return {
+        optionChanged: args.optionChanged
+    };
+}

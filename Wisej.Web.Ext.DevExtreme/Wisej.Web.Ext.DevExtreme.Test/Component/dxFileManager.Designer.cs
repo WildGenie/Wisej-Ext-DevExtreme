@@ -28,46 +28,46 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.dxFileManager1 = new Wisej.Web.Ext.DevExtreme.dxFileManager();
-			this.groupBox1.SuspendLayout();
-			this.panel.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// linkDocs
-			// 
-			this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/File_Manager/Getting_Starte" +
+            this.dxFileManager1 = new Wisej.Web.Ext.DevExtreme.dxFileManager();
+            this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // linkDocs
+            // 
+            this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/File_Manager/Getting_Starte" +
     "d_with_File_Manager/";
-			// 
-			// linkAPI
-			// 
-			this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxFileManager/";
-			// 
-			// panel
-			// 
-			this.panel.Controls.Add(this.dxFileManager1);
-			// 
-			// linkDemo
-			// 
-			this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/Overview/jQuery/L" +
+            // 
+            // linkAPI
+            // 
+            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxFileManager/";
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.dxFileManager1);
+            // 
+            // linkDemo
+            // 
+            this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/Overview/jQuery/L" +
     "ight/";
-			// 
-			// dxFileManager1
-			// 
-			this.dxFileManager1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            // 
+            // dxFileManager1
+            // 
+            this.dxFileManager1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-			this.dxFileManager1.Location = new System.Drawing.Point(15, 14);
-			this.dxFileManager1.Name = "dxFileManager1";
-			this.dxFileManager1.Size = new System.Drawing.Size(423, 284);
-			this.dxFileManager1.Text = "dxFileManager1";
-			// 
-			// dxFileManager
-			// 
-			this.Name = "dxFileManager";
-			this.groupBox1.ResumeLayout(false);
-			this.panel.ResumeLayout(false);
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            this.dxFileManager1.Location = new System.Drawing.Point(15, 14);
+            this.dxFileManager1.Name = "dxFileManager1";
+            this.dxFileManager1.Size = new System.Drawing.Size(423, 284);
+            this.dxFileManager1.Text = "dxFileManager1";
+            // 
+            // dxFileManager
+            // 
+            this.Name = "dxFileManager";
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

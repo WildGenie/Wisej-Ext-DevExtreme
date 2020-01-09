@@ -21,5 +21,10 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 			}
 			
 		}
+
+		private void dxPivotGridFieldChooser1_WidgetEvent(object sender, WidgetEventArgs e)
+		{
+
+		}
 	}
 }

@@ -28,11 +28,7 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 		{
 			this.dxCircularGauge1.Options.containerBackgroundColor = "blue";
 
-			this.dxCircularGauge1.Options.rangeContainer.ranges = new object[] {
-				new { startValue = 50, endValue = 90 },
-				new { startValue = 90, endValue = 130 },
-				new { startValue = 130, endValue = 150 }
-			};
+			this.dxCircularGauge1.Options.rangeContainer.ranges = buildRanges();
 			this.dxCircularGauge1.Update();
 		}
 

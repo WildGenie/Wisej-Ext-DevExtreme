@@ -28,47 +28,47 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxDropDownButton));
-			this.dxDropDownButton1 = new Wisej.Web.Ext.DevExtreme.dxDropDownButton();
-			this.groupBox1.SuspendLayout();
-			this.panel.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// linkDocs
-			// 
-			this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/DropDownButton/Getting_Star" +
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxDropDownButton));
+            this.dxDropDownButton1 = new Wisej.Web.Ext.DevExtreme.dxDropDownButton();
+            this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // linkDocs
+            // 
+            this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/DropDownButton/Getting_Star" +
     "ted_with_DropDownButton/";
-			// 
-			// linkAPI
-			// 
-			this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxDropDownButton/" +
+            // 
+            // linkAPI
+            // 
+            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxDropDownButton/" +
     "Configuration/";
-			// 
-			// panel
-			// 
-			this.panel.Controls.Add(this.dxDropDownButton1);
-			// 
-			// linkDemo
-			// 
-			this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownButton/Overview/jQuer" +
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.dxDropDownButton1);
+            // 
+            // linkDemo
+            // 
+            this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownButton/Overview/jQuer" +
     "y/Light/";
-			// 
-			// dxDropDownButton1
-			// 
-			this.dxDropDownButton1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-			this.dxDropDownButton1.Location = new System.Drawing.Point(126, 141);
-			this.dxDropDownButton1.Name = "dxDropDownButton1";
-			this.dxDropDownButton1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxDropDownButton1.Options"))));
-			this.dxDropDownButton1.Size = new System.Drawing.Size(200, 30);
-			this.dxDropDownButton1.Text = "dxDropDownButton1";
-			// 
-			// dxDropDownButton
-			// 
-			this.Name = "dxDropDownButton";
-			this.groupBox1.ResumeLayout(false);
-			this.panel.ResumeLayout(false);
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            // 
+            // dxDropDownButton1
+            // 
+            this.dxDropDownButton1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+            this.dxDropDownButton1.Location = new System.Drawing.Point(126, 141);
+            this.dxDropDownButton1.Name = "dxDropDownButton1";
+            this.dxDropDownButton1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxDropDownButton1.Options"))));
+            this.dxDropDownButton1.Size = new System.Drawing.Size(200, 30);
+            this.dxDropDownButton1.Text = "dxDropDownButton1";
+            // 
+            // dxDropDownButton
+            // 
+            this.Name = "dxDropDownButton";
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

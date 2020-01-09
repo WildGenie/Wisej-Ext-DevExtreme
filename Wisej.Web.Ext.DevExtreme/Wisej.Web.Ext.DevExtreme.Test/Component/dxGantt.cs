@@ -9,5 +9,10 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 		{
 			InitializeComponent();
 		}
+
+		private void dxGantt1_WidgetEvent(object sender, WidgetEventArgs e)
+		{
+
+		}
 	}
 }

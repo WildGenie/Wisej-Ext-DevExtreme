@@ -22,4 +22,9 @@
 // Returns a data map that can be converted to JSON.
 this.filterEventData = function (args) {
 
-};
+    return {
+        fullName: args.fullName,
+        name: args.name,
+        value: args.value
+    };
+}

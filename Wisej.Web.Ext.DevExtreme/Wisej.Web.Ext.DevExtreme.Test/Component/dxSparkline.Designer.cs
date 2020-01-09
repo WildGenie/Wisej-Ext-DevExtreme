@@ -28,43 +28,44 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.dxSparkline1 = new Wisej.Web.Ext.DevExtreme.dxSparkline();
-			this.groupBox1.SuspendLayout();
-			this.panel.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// linkDocs
-			// 
-			this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/Sparkline/Visual_Elements/";
-			// 
-			// linkAPI
-			// 
-			this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/Data_Visualization_Widgets/d" +
+            this.dxSparkline1 = new Wisej.Web.Ext.DevExtreme.dxSparkline();
+            this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // linkDocs
+            // 
+            this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/Sparkline/Visual_Elements/";
+            // 
+            // linkAPI
+            // 
+            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/Data_Visualization_Widgets/d" +
     "xSparkline/";
-			// 
-			// panel
-			// 
-			this.panel.Controls.Add(this.dxSparkline1);
-			// 
-			// linkDemo
-			// 
-			this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SimpleSparklines/jQuer" +
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.dxSparkline1);
+            // 
+            // linkDemo
+            // 
+            this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SimpleSparklines/jQuer" +
     "y/Light/";
-			// 
-			// dxSparkline1
-			// 
-			this.dxSparkline1.Location = new System.Drawing.Point(90, 137);
-			this.dxSparkline1.Name = "dxSparkline1";
-			this.dxSparkline1.Size = new System.Drawing.Size(273, 38);
-			this.dxSparkline1.Text = "dxSparkline1";
-			// 
-			// dxSparkline
-			// 
-			this.Name = "dxSparkline";
-			this.groupBox1.ResumeLayout(false);
-			this.panel.ResumeLayout(false);
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            // 
+            // dxSparkline1
+            // 
+            this.dxSparkline1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+            this.dxSparkline1.Location = new System.Drawing.Point(90, 137);
+            this.dxSparkline1.Name = "dxSparkline1";
+            this.dxSparkline1.Size = new System.Drawing.Size(273, 38);
+            this.dxSparkline1.Text = "dxSparkline1";
+            // 
+            // dxSparkline
+            // 
+            this.Name = "dxSparkline";
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

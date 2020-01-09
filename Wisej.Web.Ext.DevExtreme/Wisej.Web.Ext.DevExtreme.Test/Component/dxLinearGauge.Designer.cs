@@ -28,45 +28,45 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.dxLinearGauge1 = new Wisej.Web.Ext.DevExtreme.dxLinearGauge();
-			this.groupBox1.SuspendLayout();
-			this.panel.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// linkDocs
-			// 
-			this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/LinearGauge/Visual_Elements" +
+            this.dxLinearGauge1 = new Wisej.Web.Ext.DevExtreme.dxLinearGauge();
+            this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // linkDocs
+            // 
+            this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/LinearGauge/Visual_Elements" +
     "/";
-			// 
-			// linkAPI
-			// 
-			this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/Data_Visualization_Widgets/d" +
+            // 
+            // linkAPI
+            // 
+            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/Data_Visualization_Widgets/d" +
     "xLinearGauge/";
-			// 
-			// panel
-			// 
-			this.panel.Controls.Add(this.dxLinearGauge1);
-			// 
-			// linkDemo
-			// 
-			this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/ScaleCustomTickInterva" +
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.dxLinearGauge1);
+            // 
+            // linkDemo
+            // 
+            this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/ScaleCustomTickInterva" +
     "l/jQuery/Light/";
-			// 
-			// dxLinearGauge1
-			// 
-			this.dxLinearGauge1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-			this.dxLinearGauge1.Location = new System.Drawing.Point(12, 79);
-			this.dxLinearGauge1.Name = "dxLinearGauge1";
-			this.dxLinearGauge1.Size = new System.Drawing.Size(428, 155);
-			this.dxLinearGauge1.Text = "dxLinearGauge1";
-			// 
-			// dxLinearGauge
-			// 
-			this.Name = "dxLinearGauge";
-			this.groupBox1.ResumeLayout(false);
-			this.panel.ResumeLayout(false);
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            // 
+            // dxLinearGauge1
+            // 
+            this.dxLinearGauge1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+            this.dxLinearGauge1.Location = new System.Drawing.Point(12, 79);
+            this.dxLinearGauge1.Name = "dxLinearGauge1";
+            this.dxLinearGauge1.Size = new System.Drawing.Size(428, 155);
+            this.dxLinearGauge1.Text = "dxLinearGauge1";
+            // 
+            // dxLinearGauge
+            // 
+            this.Name = "dxLinearGauge";
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

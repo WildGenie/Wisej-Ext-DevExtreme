@@ -18,6 +18,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -25,6 +26,7 @@ using System.Drawing;
 using System.Drawing.Design;
 using System.Dynamic;
 using System.IO;
+using System.Threading.Tasks;
 using Wisej.Base;
 using Wisej.Core;
 using Wisej.Design;
@@ -96,6 +98,10 @@ namespace Wisej.Web.Ext.DevExtreme
 		/// <param name="e"></param>
 		protected virtual void OnInitialized(EventArgs e)
 		{
+			this.IsInitialized = true;
+
+			ProcessDeferredCalls();
+
 			((EventHandler)base.Events[nameof(Initialized)])?.Invoke(this, e);
 		}
 
@@ -125,6 +131,15 @@ namespace Wisej.Web.Ext.DevExtreme
 					}
 				}
 			}
+		}
+
+		/// <summary>
+		/// Returns whether the javascript widget has been initialized.
+		/// </summary>
+		public bool IsInitialized
+		{
+			get;
+			private set;
 		}
 
 		/// <summary>
@@ -369,6 +384,55 @@ namespace Wisej.Web.Ext.DevExtreme
 				type = type.BaseType;
 			}
 			return type;
+		}
+
+		/// <summary>
+		/// Invokes a method on the wrapped widget. If the widgets is not initialized yet, it
+		/// will queue the call and wait until it's initialized.
+		/// </summary>
+		/// <param name="name"></param>
+		/// <param name="args"></param>
+		/// <returns></returns>
+		private object CallWidget(string name, object[] args)
+		{
+			if (!this.IsInitialized)
+			{
+				if (this.deferredCalls == null)
+					this.deferredCalls = new ConcurrentQueue<DeferredCall>();
+
+				object result = null;
+
+				TaskCompletionSource<dynamic> tcs = null;
+				if (name.EndsWith("Async"))
+				{
+					name = name.Substring(0, name.Length - "Async".Length);
+					tcs = new TaskCompletionSource<dynamic>();
+					result = tcs.Task;
+				}
+
+				this.deferredCalls.Enqueue(new DeferredCall()
+				{
+
+					MethodName = name,
+					Arguments = args,
+					Tcs = tcs
+				});
+
+				return result;
+			}
+			else
+			{
+				if (name.EndsWith("Async"))
+				{
+					name = name.Substring(0, name.Length - "Async".Length);
+					return this.CallAsync(name, args);
+				}
+				else
+				{
+					this.Call(name, args);
+					return null;
+				}
+			}
 		}
 
 		/// <summary>
@@ -665,15 +729,8 @@ namespace Wisej.Web.Ext.DevExtreme
 					return false;
 				}
 
-				if (name.EndsWith("Async"))
-				{
-					name = name.Substring(0, name.Length - "Async".Length);
-					result = this.owner.CallAsync($"this.{this.target}.{name}", args);
-				}
-				else
-				{
-					this.owner.Call($"this.{this.target}.{name}", args);
-				}
+				result = this.owner.CallWidget($"this.{this.target}.{name}", args);
+		
 				return true;
 			}
 
@@ -732,6 +789,45 @@ namespace Wisej.Web.Ext.DevExtreme
 				if (this.events.TryGetValue(e.Type, out handler))
 				{
 					((Wisej.Web.WidgetEventHandler)handler).Invoke(sender, e);
+				}
+			}
+		}
+
+		#endregion
+
+		#region DeferredCall
+
+		private class DeferredCall
+		{
+			internal string MethodName;
+			internal object[] Arguments;
+			internal TaskCompletionSource<dynamic> Tcs;
+		}
+
+		private ConcurrentQueue<DeferredCall> deferredCalls;
+
+		private void ProcessDeferredCalls()
+		{
+			if (this.deferredCalls == null || this.deferredCalls.Count == 0)
+				return;
+
+			DeferredCall call = null;
+			while (this.deferredCalls.TryDequeue(out call))
+			{
+				if (call.Tcs == null)
+				{
+					this.Call(call.MethodName, call.Arguments);
+				}
+				else
+				{
+					this.Call(call.MethodName, (result) =>
+					{
+						if (result is Exception)
+							call.Tcs.SetException((Exception)result);
+						else
+							call.Tcs.SetResult(result);
+
+					}, call.Arguments);
 				}
 			}
 		}

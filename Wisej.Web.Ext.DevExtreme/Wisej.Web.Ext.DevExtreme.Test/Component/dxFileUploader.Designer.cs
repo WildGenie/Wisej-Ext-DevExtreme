@@ -28,43 +28,43 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.dxFileUploader1 = new Wisej.Web.Ext.DevExtreme.dxFileUploader();
-			this.groupBox1.SuspendLayout();
-			this.panel.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// linkDocs
-			// 
-			this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/FileUploader/Overview/";
-			// 
-			// linkAPI
-			// 
-			this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxFileUploader/";
-			// 
-			// panel
-			// 
-			this.panel.Controls.Add(this.dxFileUploader1);
-			// 
-			// linkDemo
-			// 
-			this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/FileSelection/jQ" +
+            this.dxFileUploader1 = new Wisej.Web.Ext.DevExtreme.dxFileUploader();
+            this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // linkDocs
+            // 
+            this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/FileUploader/Overview/";
+            // 
+            // linkAPI
+            // 
+            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxFileUploader/";
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.dxFileUploader1);
+            // 
+            // linkDemo
+            // 
+            this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/FileSelection/jQ" +
     "uery/Light/";
-			// 
-			// dxFileUploader1
-			// 
-			this.dxFileUploader1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-			this.dxFileUploader1.Location = new System.Drawing.Point(126, 124);
-			this.dxFileUploader1.Name = "dxFileUploader1";
-			this.dxFileUploader1.Size = new System.Drawing.Size(200, 65);
-			this.dxFileUploader1.Text = "dxFileUploader1";
-			// 
-			// dxFileUploader
-			// 
-			this.Name = "dxFileUploader";
-			this.groupBox1.ResumeLayout(false);
-			this.panel.ResumeLayout(false);
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            // 
+            // dxFileUploader1
+            // 
+            this.dxFileUploader1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+            this.dxFileUploader1.Location = new System.Drawing.Point(126, 124);
+            this.dxFileUploader1.Name = "dxFileUploader1";
+            this.dxFileUploader1.Size = new System.Drawing.Size(200, 65);
+            this.dxFileUploader1.Text = "dxFileUploader1";
+            // 
+            // dxFileUploader
+            // 
+            this.Name = "dxFileUploader";
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

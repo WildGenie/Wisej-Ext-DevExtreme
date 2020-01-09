@@ -313,138 +313,138 @@
     <EmbeddedResource Include="DevExtreme\js\dx-gantt.min.js" />
     <EmbeddedResource Include="DevExtreme\js\quill.min.js" />
     <EmbeddedResource Include="DevExtreme\css\quill.snow.css" />
-    <Content Include="dxBullet.js">
+    <EmbeddedResource Include="dxBullet.js">
       <DependentUpon>dxBullet.cs</DependentUpon>
-    </Content>
-    <Content Include="dxCalendar.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxCalendar.js">
       <DependentUpon>dxCalendar.cs</DependentUpon>
-    </Content>
-    <Content Include="dxColorBox.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxColorBox.js">
       <DependentUpon>dxColorBox.cs</DependentUpon>
-    </Content>
-    <Content Include="dxDataGrid.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxDataGrid.js">
       <DependentUpon>dxDataGrid.cs</DependentUpon>
-    </Content>
-    <Content Include="dxDateBox.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxDateBox.js">
       <DependentUpon>dxDateBox.cs</DependentUpon>
-    </Content>
-    <Content Include="dxDiagram.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxDiagram.js">
       <DependentUpon>dxDiagram.cs</DependentUpon>
-    </Content>
-    <Content Include="dxDropDownBox.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxDropDownBox.js">
       <DependentUpon>dxDropDownBox.cs</DependentUpon>
-    </Content>
-    <Content Include="dxDropDownButton.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxDropDownButton.js">
       <DependentUpon>dxDropDownButton.cs</DependentUpon>
-    </Content>
-    <Content Include="dxFileManager.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxFileManager.js">
       <DependentUpon>dxFileManager.cs</DependentUpon>
-    </Content>
-    <Content Include="dxFileUploader.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxFileUploader.js">
       <DependentUpon>dxFileUploader.cs</DependentUpon>
-    </Content>
-    <Content Include="dxFilterBuilder.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxFilterBuilder.js">
       <DependentUpon>dxFilterBuilder.cs</DependentUpon>
-    </Content>
-    <Content Include="dxForm.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxForm.js">
       <DependentUpon>dxForm.cs</DependentUpon>
-    </Content>
-    <Content Include="dxFunnel.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxFunnel.js">
       <DependentUpon>dxFunnel.cs</DependentUpon>
-    </Content>
-    <Content Include="dxGallery.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxGallery.js">
       <DependentUpon>dxGallery.cs</DependentUpon>
-    </Content>
-    <Content Include="dxGantt.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxGantt.js">
       <DependentUpon>dxGantt.cs</DependentUpon>
-    </Content>
-    <Content Include="dxHtmlEditor.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxHtmlEditor.js">
       <DependentUpon>dxHtmlEditor.cs</DependentUpon>
-    </Content>
-    <Content Include="dxLinearGauage.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxLinearGauage.js">
       <DependentUpon>dxLinearGauge.cs</DependentUpon>
-    </Content>
-    <Content Include="dxList.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxList.js">
       <DependentUpon>dxList.cs</DependentUpon>
-    </Content>
-    <Content Include="dxLookup.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxLookup.js">
       <DependentUpon>dxLookup.cs</DependentUpon>
-    </Content>
-    <Content Include="dxMap.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxMap.js">
       <DependentUpon>dxMap.cs</DependentUpon>
-    </Content>
-    <Content Include="dxMenu.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxMenu.js">
       <DependentUpon>dxMenu.cs</DependentUpon>
-    </Content>
-    <Content Include="dxNavBar.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxNavBar.js">
       <DependentUpon>dxNavBar.cs</DependentUpon>
-    </Content>
-    <Content Include="dxPieChart.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxPieChart.js">
       <DependentUpon>dxPieChart.cs</DependentUpon>
-    </Content>
-    <Content Include="dxPivotGrid.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxPivotGrid.js">
       <DependentUpon>dxPivotGrid.cs</DependentUpon>
-    </Content>
-    <Content Include="dxPivotGridFieldChooser.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxPivotGridFieldChooser.js">
       <DependentUpon>dxPivotGridFieldChooser.cs</DependentUpon>
-    </Content>
-    <Content Include="dxPolarChart.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxPolarChart.js">
       <DependentUpon>dxPolarChart.cs</DependentUpon>
-    </Content>
-    <Content Include="dxPopup.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxPopup.js">
       <DependentUpon>dxPopup.cs</DependentUpon>
-    </Content>
-    <Content Include="dxProgressBar.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxProgressBar.js">
       <DependentUpon>dxProgressBar.cs</DependentUpon>
-    </Content>
-    <Content Include="dxRangeSelector.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxRangeSelector.js">
       <DependentUpon>dxRangeSelector.cs</DependentUpon>
-    </Content>
-    <Content Include="dxRangeSlider.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxRangeSlider.js">
       <DependentUpon>dxRangeSlider.cs</DependentUpon>
-    </Content>
-    <Content Include="dxSankey.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxSankey.js">
       <DependentUpon>dxSanKey.cs</DependentUpon>
-    </Content>
-    <Content Include="dxScheduler.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxScheduler.js">
       <DependentUpon>dxScheduler.cs</DependentUpon>
-    </Content>
-    <Content Include="dxSlideOut.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxSlideOut.js">
       <DependentUpon>dxSlideOut.cs</DependentUpon>
-    </Content>
-    <Content Include="dxSortable.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxSortable.js">
       <DependentUpon>dxSortable.cs</DependentUpon>
-    </Content>
-    <Content Include="dxSparkline.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxSparkline.js">
       <DependentUpon>dxSparkline.cs</DependentUpon>
-    </Content>
-    <Content Include="dxSpeedDialAction.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxSpeedDialAction.js">
       <DependentUpon>dxSpeedDialAction.cs</DependentUpon>
-    </Content>
-    <Content Include="dxSwitch.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxSwitch.js">
       <DependentUpon>dxSwitch.cs</DependentUpon>
-    </Content>
-    <Content Include="dxTileView.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxTileView.js">
       <DependentUpon>dxTileView.cs</DependentUpon>
-    </Content>
-    <Content Include="dxToast.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxToast.js">
       <DependentUpon>dxToast.cs</DependentUpon>
-    </Content>
-    <Content Include="dxToolbar.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxToolbar.js">
       <DependentUpon>dxToolbar.cs</DependentUpon>
-    </Content>
-    <Content Include="dxTreeList.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxTreeList.js">
       <DependentUpon>dxTreeList.cs</DependentUpon>
-    </Content>
-    <Content Include="dxTreeMap.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxTreeMap.js">
       <DependentUpon>dxTreeMap.cs</DependentUpon>
-    </Content>
-    <Content Include="dxTreeView.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxTreeView.js">
       <DependentUpon>dxTreeView.cs</DependentUpon>
-    </Content>
-    <Content Include="dxVectorMap.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxVectorMap.js">
       <DependentUpon>dxVectorMap.cs</DependentUpon>
-    </Content>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

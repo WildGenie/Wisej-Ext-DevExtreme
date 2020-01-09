@@ -62,7 +62,6 @@
 			this.dxChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxChart1.Options"))));
 			this.dxChart1.Size = new System.Drawing.Size(335, 220);
 			this.dxChart1.Text = "dxChart1";
-			this.dxChart1.WidgetEvent += new Wisej.Web.WidgetEventHandler(this.dxChart1_WidgetEvent);
 			// 
 			// dxChart
 			// 
