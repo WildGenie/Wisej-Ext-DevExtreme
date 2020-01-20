@@ -22,4 +22,18 @@
 // Returns a data map that can be converted to JSON.
 this.filterEventData = function (args) {
 
+	switch (args.type) {
+
+		case "itemClick":
+			return args.itemIndex;
+
+	}
+};
+
+/**
+ * Resizes the hosted widget to always fit our container.
+ */
+this.resizeWidget = function () {
+
+		this.container.style.lineHeight = "1px";
 };

@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxLookup));
             this.dxLookup1 = new Wisej.Web.Ext.DevExtreme.dxLookup();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
@@ -54,6 +55,7 @@
             this.dxLookup1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.dxLookup1.Location = new System.Drawing.Point(126, 141);
             this.dxLookup1.Name = "dxLookup1";
+            this.dxLookup1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxLookup1.Options"))));
             this.dxLookup1.Size = new System.Drawing.Size(200, 30);
             this.dxLookup1.Text = "dxLookup1";
             // 

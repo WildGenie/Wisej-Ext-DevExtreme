@@ -40,6 +40,7 @@ namespace Wisej.Web.Ext.DevExtreme
 			this.WidgetWiredEvents = new[] {
 				"itemClick",
 				"itemSwipe",
+				"pullRefresh",
 				"itemDeleted",
 				"itemDeleting",
 				"selectAllValueChanged"

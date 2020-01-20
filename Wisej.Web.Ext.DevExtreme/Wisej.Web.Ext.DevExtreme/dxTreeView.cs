@@ -41,6 +41,7 @@ namespace Wisej.Web.Ext.DevExtreme
 				"itemHold",
 				"itemClick",
 				"itemExpanded",
+				"selectionChanged",
 				"itemSelectionChanged",
 				"selectAllValueChanged",
 			};

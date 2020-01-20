@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxForm));
             this.dxForm1 = new Wisej.Web.Ext.DevExtreme.dxForm();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
@@ -51,8 +52,12 @@
             // 
             // dxForm1
             // 
+            this.dxForm1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
             this.dxForm1.Location = new System.Drawing.Point(41, 36);
             this.dxForm1.Name = "dxForm1";
+            this.dxForm1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxForm1.Options"))));
             this.dxForm1.Size = new System.Drawing.Size(370, 241);
             this.dxForm1.Text = "dxForm1";
             // 

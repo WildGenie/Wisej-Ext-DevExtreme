@@ -30,7 +30,5 @@ this.filterEventData = function (args) {
             };
             break;
 
-        default:
-            break;
     }
 };

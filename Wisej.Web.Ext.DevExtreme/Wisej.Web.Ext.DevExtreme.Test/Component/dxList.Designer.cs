@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxList));
             this.dxList1 = new Wisej.Web.Ext.DevExtreme.dxList();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
@@ -57,6 +58,7 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.dxList1.Location = new System.Drawing.Point(27, 29);
             this.dxList1.Name = "dxList1";
+            this.dxList1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxList1.Options"))));
             this.dxList1.Size = new System.Drawing.Size(398, 254);
             this.dxList1.Text = "dxList1";
             // 

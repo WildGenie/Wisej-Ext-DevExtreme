@@ -19,6 +19,17 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+/**
+ * Process the options map before it is used to
+ * create or update the widget.
+ */
+this.filterOptions = function (options) {
+
+	if (options.label)
+		options.label.customizeText = this.initFunction(options.label.customizeText);
+};
+
+
 // Returns a data map that can be converted to JSON.
 this.filterEventData = function (args) {
 

@@ -40,6 +40,7 @@ namespace Wisej.Web.Ext.DevExtreme
 			this.WidgetWiredEvents = new[] {
 				"scroll",
 				"itemClick",
+				"pullRefresh",
 				"pageLoading",
 				"valueChanged",
 				"selectionChanged"

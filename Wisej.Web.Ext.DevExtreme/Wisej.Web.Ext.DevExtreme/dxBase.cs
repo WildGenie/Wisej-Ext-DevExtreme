@@ -136,6 +136,7 @@ namespace Wisej.Web.Ext.DevExtreme
 		/// <summary>
 		/// Returns whether the javascript widget has been initialized.
 		/// </summary>
+		[Browsable(false)]
 		public bool IsInitialized
 		{
 			get;

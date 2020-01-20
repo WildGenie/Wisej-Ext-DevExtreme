@@ -22,4 +22,19 @@
 // Returns a data map that can be converted to JSON.
 this.filterEventData = function (args) {
 
+    switch (args.type) {
+
+        case "editorPrepared":
+            return {
+                dataField: args.dataField,
+                disabled: args.disabled,
+                editorName: args.editorName,
+                filterOperation: args.filterOperation,
+                readOnly: args.readOnly,
+                rtlEnabled: args.rtlEnabled,
+                value: args.value,
+                width: args.width
+            };
+            break;
+    }
 };

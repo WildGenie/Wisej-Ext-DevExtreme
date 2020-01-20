@@ -8,11 +8,17 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 		public dxDropDownButton()
 		{
 			InitializeComponent();
+
+			this.dxDropDownButton1.Widget.buttonClick += new WidgetEventHandler(dxDropDownButton1_WidgetEvent);
 		}
 
 		private void dxDropDownButton1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
+			AlertBox.Show(
+				$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+				MessageBoxIcon.Information);
 
+			Application.Play(MessageBoxIcon.Information);
 		}
 	}
 }

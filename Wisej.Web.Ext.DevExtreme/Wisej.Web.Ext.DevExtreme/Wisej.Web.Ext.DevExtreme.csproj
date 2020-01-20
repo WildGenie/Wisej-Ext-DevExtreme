@@ -91,9 +91,6 @@
     <Compile Include="dxFileManager.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="dxFileUploader.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="dxFilterBuilder.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -178,9 +175,6 @@
     <Compile Include="dxTileView.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="dxToast.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="dxToolbar.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -191,9 +185,6 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="dxTreeView.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="dxVectorMap.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -340,9 +331,6 @@
     <EmbeddedResource Include="dxFileManager.js">
       <DependentUpon>dxFileManager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dxFileUploader.js">
-      <DependentUpon>dxFileUploader.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="dxFilterBuilder.js">
       <DependentUpon>dxFilterBuilder.cs</DependentUpon>
     </EmbeddedResource>
@@ -427,9 +415,6 @@
     <EmbeddedResource Include="dxTileView.js">
       <DependentUpon>dxTileView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dxToast.js">
-      <DependentUpon>dxToast.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="dxToolbar.js">
       <DependentUpon>dxToolbar.cs</DependentUpon>
     </EmbeddedResource>
@@ -441,9 +426,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="dxTreeView.js">
       <DependentUpon>dxTreeView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="dxVectorMap.js">
-      <DependentUpon>dxVectorMap.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

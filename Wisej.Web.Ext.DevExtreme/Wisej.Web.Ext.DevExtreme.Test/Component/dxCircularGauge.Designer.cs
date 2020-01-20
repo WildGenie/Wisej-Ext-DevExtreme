@@ -133,7 +133,6 @@
 			this.dxCircularGauge1.Size = new System.Drawing.Size(320, 250);
 			this.dxCircularGauge1.Text = "dxCircularGauge1";
 			this.dxCircularGauge1.Value = 100;
-			this.dxCircularGauge1.WidgetEvent += new Wisej.Web.WidgetEventHandler(this.dxCircularGauge1_WidgetEvent);
 			// 
 			// label4
 			// 

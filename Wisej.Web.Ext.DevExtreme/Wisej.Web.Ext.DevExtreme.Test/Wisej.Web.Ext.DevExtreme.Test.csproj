@@ -43,6 +43,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Data\TreeView\4.png" />
+    <EmbeddedResource Include="Data\TreeView\5.png" />
+    <EmbeddedResource Include="Data\TreeView\6.png" />
+    <EmbeddedResource Include="Data\TreeView\7.png" />
+    <EmbeddedResource Include="Data\TreeView\9.png" />
+    <Content Include="Data\TreeView\10.png" />
+    <Content Include="Data\TreeView\14.png" />
+    <Content Include="Data\TreeView\15.png" />
+    <Content Include="Data\TreeView\2.png" />
     <Content Include="Default.html" />
     <Content Include="Default.json" />
     <Content Include="favicon.ico" />
@@ -78,9 +87,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Component\dxFileManager.resx">
       <DependentUpon>dxFileManager.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxFileUploader.resx">
-      <DependentUpon>dxFileUploader.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Component\dxFilterBuilder.resx">
       <DependentUpon>dxFilterBuilder.cs</DependentUpon>
@@ -160,6 +166,9 @@
     <EmbeddedResource Include="Component\dxSwitch.resx">
       <DependentUpon>dxSwitch.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Component\dxTileView.resx">
+      <DependentUpon>dxTileView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Component\dxToolbar.resx">
       <DependentUpon>dxToolbar.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,9 +180,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Component\dxTreeView.resx">
       <DependentUpon>dxTreeView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxVectorMap.resx">
-      <DependentUpon>dxVectorMap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Component\TestBase.resx">
       <DependentUpon>TestBase.cs</DependentUpon>
@@ -258,12 +264,6 @@
     </Compile>
     <Compile Include="Component\dxFileManager.Designer.cs">
       <DependentUpon>dxFileManager.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxFileUploader.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxFileUploader.Designer.cs">
-      <DependentUpon>dxFileUploader.cs</DependentUpon>
     </Compile>
     <Compile Include="Component\dxFilterBuilder.cs">
       <SubType>UserControl</SubType>
@@ -427,12 +427,6 @@
     <Compile Include="Component\dxTileView.Designer.cs">
       <DependentUpon>dxTileView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Component\dxToast.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxToast.Designer.cs">
-      <DependentUpon>dxToast.cs</DependentUpon>
-    </Compile>
     <Compile Include="Component\dxToolbar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -456,12 +450,6 @@
     </Compile>
     <Compile Include="Component\dxTreeView.Designer.cs">
       <DependentUpon>dxTreeView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxVectorMap.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxVectorMap.Designer.cs">
-      <DependentUpon>dxVectorMap.cs</DependentUpon>
     </Compile>
     <Compile Include="Component\TestBase.cs">
       <SubType>UserControl</SubType>
@@ -494,9 +482,6 @@
     </Reference>
     <Reference Include="Wisej.Framework">
       <HintPath>..\..\..\..\..\Development\2.1\bin\Wisej.Framework.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Framework.Design">
-      <HintPath>..\..\..\..\..\Development\2.1\bin\Wisej.Framework.Design.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Web.Ext.DevExtreme">
       <HintPath>..\..\bin\Wisej.Web.Ext.DevExtreme.dll</HintPath>

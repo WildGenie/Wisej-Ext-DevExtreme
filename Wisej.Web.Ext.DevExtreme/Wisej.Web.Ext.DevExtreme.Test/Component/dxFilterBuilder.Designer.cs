@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxFilterBuilder));
             this.dxFilterBuilder1 = new Wisej.Web.Ext.DevExtreme.dxFilterBuilder();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
@@ -57,6 +58,7 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.dxFilterBuilder1.Location = new System.Drawing.Point(36, 36);
             this.dxFilterBuilder1.Name = "dxFilterBuilder1";
+            this.dxFilterBuilder1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxFilterBuilder1.Options"))));
             this.dxFilterBuilder1.Size = new System.Drawing.Size(380, 241);
             this.dxFilterBuilder1.Text = "dxFilterBuilder1";
             // 

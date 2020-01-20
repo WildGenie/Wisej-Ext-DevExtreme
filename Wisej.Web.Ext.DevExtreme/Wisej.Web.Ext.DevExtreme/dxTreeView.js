@@ -22,4 +22,20 @@
 // Returns a data map that can be converted to JSON.
 this.filterEventData = function (args) {
 
+    switch (args.type) {
+
+        case "selectionChanged":
+            return {
+                addedItems: args.addedItems,
+                removedItem: args.removedItems
+            };
+            break;
+
+        case "itemClick":
+            return {
+                itemIndex: args.itemIndex
+            }
+            break;
+
+    }
 };
