@@ -8,6 +8,8 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 		public dxSwitch()
 		{
 			InitializeComponent();
+
+			this.dxSwitch1.Checked = true;
 		}
 
 		private void dxSwitch1_WidgetEvent(object sender, WidgetEventArgs e)

@@ -42,5 +42,14 @@ namespace Wisej.Web.Ext.DevExtreme
 				"buttonClick"
 			};
 		}
+
+		/// <summary>
+		/// Specifies the text of the DropDownButton
+		/// </summary>
+		public override string Text
+		{
+			get { return this.Options.text ?? ""; }
+			set { this.Options.text = value ?? ""; }
+		}
 	}
 }

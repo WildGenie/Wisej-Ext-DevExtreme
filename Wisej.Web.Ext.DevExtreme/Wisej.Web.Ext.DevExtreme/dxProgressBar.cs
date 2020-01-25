@@ -17,6 +17,8 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+using System.ComponentModel;
+
 namespace Wisej.Web.Ext.DevExtreme
 {
 	/// <summary>
@@ -43,5 +45,28 @@ namespace Wisej.Web.Ext.DevExtreme
 			};
 		}
 
+		/// <summary>
+		/// Not applicable for this control
+		/// </summary>
+		[Browsable(false)]
+		[EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+		public override string Text { get => base.Text; set => base.Text = value; }
+
+		/// <summary>
+		/// Specifies the checked state of the Switch
+		/// </summary>
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+		public int Value
+		{
+			get
+			{
+				return this.Options.value ?? 0;
+			}
+			set
+			{
+				this.Options.value = value;
+			}
+		}
 	}
 }

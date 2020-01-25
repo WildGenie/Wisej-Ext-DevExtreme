@@ -17,6 +17,8 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+using System.ComponentModel;
+
 namespace Wisej.Web.Ext.DevExtreme
 {
 	/// <summary>
@@ -47,6 +49,23 @@ namespace Wisej.Web.Ext.DevExtreme
 				"keyPress",
 				"valueChanged"
 			};
+		}
+
+		/// <summary>
+		/// Not applicable for this control
+		/// </summary>
+		[Browsable(false)]
+		[EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+		public override string Text { get => base.Text; set => base.Text = value; }
+
+		/// <summary>
+		/// Specifies the selected date.
+		/// </summary>
+		public string Value
+		{
+			get { return this.Options.value ?? ""; }
+			set { this.Options.value = value ?? ""; }
 		}
 	}
 }

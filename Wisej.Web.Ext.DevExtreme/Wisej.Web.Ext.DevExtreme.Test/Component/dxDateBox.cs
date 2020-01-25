@@ -9,6 +9,8 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 		{
 			InitializeComponent();
 
+			this.dxDateBox1.Value = "2020-01-01";
+
 			this.dxDateBox1.Widget.valueChanged += new WidgetEventHandler(dxDateBox1_WidgetEvent);
 		}
 

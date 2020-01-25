@@ -19,6 +19,32 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+/**
+ * Process the options map before it is used to
+ * create or update the widget.
+ */
+this.filterOptions = function (options) {
+
+    if (options.items) {
+        for (var i = 0; i < options.items.length; i++) {
+            if (options.items[i].template) {
+                options.items[i].template = this.initFunction(options.items[i].template);
+            }
+            if (options.items[i].onClick)
+                options.items[i].onClick = this.initFunction(options.items[i].onClick);
+
+            if (options.items[i].options) {
+                if (options.items[i].options.onClick)
+                    options.items[i].options.onClick = this.initFunction(options.items[i].options.onClick);
+
+                if (options.items[i].options.onValueChanged)
+                    options.items[i].options.onValueChanged = this.initFunction(options.items[i].options.onValueChanged);
+
+            }
+        }
+    }
+};
+
 // Returns a data map that can be converted to JSON.
 this.filterEventData = function (args) {
 

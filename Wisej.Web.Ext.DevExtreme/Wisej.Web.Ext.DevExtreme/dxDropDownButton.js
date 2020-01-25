@@ -19,6 +19,20 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+/**
+ * Process the options map before it is used to
+ * create or update the widget.
+ */
+this.filterOptions = function (options) {
+
+    if (options.onItemClick)
+        options.onItemClick = this.initFunction(options.onItemClick);
+
+    if (options.onButtonClick)
+        options.onButtonClick = this.initFunction(options.onButtonClick);
+};
+
+
 // Returns a data map that can be converted to JSON.
 this.filterEventData = function (args) {
 

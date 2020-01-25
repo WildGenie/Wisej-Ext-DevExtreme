@@ -8,6 +8,8 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 		public dxHtmlEditor()
 		{
 			InitializeComponent();
+
+			this.dxHtmlEditor1.Widget.valueChanged += new WidgetEventHandler(dxHtmlEditor1_WidgetEvent);
 		}
 
 		private void dxHtmlEditor1_WidgetEvent(object sender, WidgetEventArgs e)

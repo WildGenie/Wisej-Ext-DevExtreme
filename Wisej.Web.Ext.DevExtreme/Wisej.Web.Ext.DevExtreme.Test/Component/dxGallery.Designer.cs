@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxGallery));
             this.dxGallery1 = new Wisej.Web.Ext.DevExtreme.dxGallery();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
@@ -57,6 +58,7 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.dxGallery1.Location = new System.Drawing.Point(37, 36);
             this.dxGallery1.Name = "dxGallery1";
+            this.dxGallery1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxGallery1.Options"))));
             this.dxGallery1.Size = new System.Drawing.Size(379, 241);
             this.dxGallery1.Text = "dxGallery1";
             // 

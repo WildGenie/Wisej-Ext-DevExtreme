@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxGantt));
             this.dxGantt1 = new Wisej.Web.Ext.DevExtreme.dxGantt();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
@@ -57,6 +58,7 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.dxGantt1.Location = new System.Drawing.Point(37, 29);
             this.dxGantt1.Name = "dxGantt1";
+            this.dxGantt1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxGantt1.Options"))));
             this.dxGantt1.Size = new System.Drawing.Size(378, 255);
             this.dxGantt1.Text = "dxGantt1";
             // 

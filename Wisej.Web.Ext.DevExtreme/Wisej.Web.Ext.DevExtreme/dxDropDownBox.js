@@ -19,7 +19,28 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+/**
+ * Process the options map before it is used to
+ * create or update the widget.
+ */
+this.filterOptions = function (options) {
+
+    if (options.contentTemplate)
+        options.contentTemplate = this.initFunction(options.contentTemplate);
+
+    if (options.displayExpr)
+        options.displayExpr = this.initFunction(options.displayExpr);
+};
+
 // Returns a data map that can be converted to JSON.
 this.filterEventData = function (args) {
 
+    switch (args.type) {
+
+        case "valueChanged":
+            return {
+                previousValue: args.previousValue,
+                value: args.value
+            }
+    }
 };

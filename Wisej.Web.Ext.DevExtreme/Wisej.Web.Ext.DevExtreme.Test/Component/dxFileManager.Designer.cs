@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxFileManager));
             this.dxFileManager1 = new Wisej.Web.Ext.DevExtreme.dxFileManager();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
@@ -58,6 +59,7 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.dxFileManager1.Location = new System.Drawing.Point(15, 14);
             this.dxFileManager1.Name = "dxFileManager1";
+            this.dxFileManager1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxFileManager1.Options"))));
             this.dxFileManager1.Size = new System.Drawing.Size(423, 284);
             this.dxFileManager1.Text = "dxFileManager1";
             // 

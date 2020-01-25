@@ -186,6 +186,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Themes\App.mixin.theme" />
     <Content Include="Data\PivotGrid\sales.json" />
+    <Content Include="Data\DataGrid\data.json" />
+    <None Include="Data\Gantt\tasks.json" />
+    <None Include="Data\DropDownBox\customers.json" />
+    <None Include="Data\Gantt\dependencies.json" />
+    <None Include="Data\Gantt\resources.json" />
+    <None Include="Data\Gantt\resourceAssignments.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -483,6 +489,10 @@
     <Reference Include="Wisej.Framework">
       <HintPath>..\..\..\..\..\Development\2.1\bin\Wisej.Framework.dll</HintPath>
     </Reference>
+    <Reference Include="Wisej.Framework.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Development\2.1\bin\Wisej.Framework.Design.dll</HintPath>
+    </Reference>
     <Reference Include="Wisej.Web.Ext.DevExtreme">
       <HintPath>..\..\bin\Wisej.Web.Ext.DevExtreme.dll</HintPath>
     </Reference>
@@ -507,7 +517,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49684/</IISUrl>
+          <IISUrl>http://localhost:49685/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

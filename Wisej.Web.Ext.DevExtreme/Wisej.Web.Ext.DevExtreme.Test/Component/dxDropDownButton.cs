@@ -9,6 +9,8 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 		{
 			InitializeComponent();
 
+			this.dxDropDownButton1.Text = "dxDropDownButton1";
+
 			this.dxDropDownButton1.Widget.buttonClick += new WidgetEventHandler(dxDropDownButton1_WidgetEvent);
 		}
 

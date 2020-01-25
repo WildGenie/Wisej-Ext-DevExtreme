@@ -117,6 +117,53 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="clientEvent1.JavaScript" xml:space="preserve">
+    <value>var treeView;
+    
+    var syncTreeViewSelection = function(treeView, value){
+        if (!value) {
+            treeView.unselectAll();
+        } else {
+            treeView.selectItem(value);
+        }
+    };
+
+    var getSelectedItemsKeys = function(items) {
+        var result = [];
+        items.forEach(function(item) {
+            if(item.selected) {
+                result.push(item.key);
+            }
+            if(item.items.length) {
+                result = result.concat(getSelectedItemsKeys(item.items));
+            }
+        });
+        return result;
+    };</value>
+  </data>
+  <data name="widgetFunction2.Source" xml:space="preserve">
+    <value>var e     = arguments[0];
+var value = e.component.option("value");
+var $dataGrid = $("&lt;div&gt;").dxDataGrid({
+                    dataSource: e.component.option("dataSource"),
+                        columns: ["CompanyName", "City", "Phone"],
+                        hoverStateEnabled: true,
+                        paging: { enabled: true, pageSize: 10 },
+                        filterRow: { visible: true },
+                        scrolling: { mode: "infinite" },
+                        selection: { mode: "single" },
+                        selectedRowKeys: [value],
+                        height: "100%",
+                        onSelectionChanged: function(selectedItems){
+                            var keys = selectedItems.selectedRowKeys,
+                                hasSelection = keys.length;
+                                e.component.option("value", hasSelection ? keys[0].ID : null);
+                        }
+                    });
+            
+            
+return $dataGrid;</value>
+  </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0

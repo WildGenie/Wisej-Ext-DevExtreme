@@ -8,6 +8,8 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 		public dxGallery()
 		{
 			InitializeComponent();
+
+			this.dxGallery1.Widget.itemClick += new WidgetEventHandler(dxGallery1_WidgetEvent);
 		}
 
 		private void dxGallery1_WidgetEvent(object sender, WidgetEventArgs e)

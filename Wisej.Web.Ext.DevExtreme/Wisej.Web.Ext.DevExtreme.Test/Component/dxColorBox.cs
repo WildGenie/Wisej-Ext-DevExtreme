@@ -8,6 +8,8 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 		public dxColorBox()
 		{
 			InitializeComponent();
+
+			this.dxColorBox1.Widget.valueChanged += new WidgetEventHandler(dxColorBox1_WidgetEvent);
 		}
 
 		private void dxColorBox1_WidgetEvent(object sender, WidgetEventArgs e)

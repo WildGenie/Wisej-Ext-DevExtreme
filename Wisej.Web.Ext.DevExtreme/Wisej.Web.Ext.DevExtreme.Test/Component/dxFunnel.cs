@@ -8,6 +8,9 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 		public dxFunnel()
 		{
 			InitializeComponent();
+
+			this.dxFunnel1.Widget.itemClick += new WidgetEventHandler(dxFunnel1_WidgetEvent);
+			this.dxFunnel1.Widget.legendClick += new WidgetEventHandler(dxFunnel1_WidgetEvent);
 		}
 
 		private void dxFunnel1_WidgetEvent(object sender, WidgetEventArgs e)
