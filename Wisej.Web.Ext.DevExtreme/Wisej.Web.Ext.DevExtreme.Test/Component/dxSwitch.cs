@@ -10,6 +10,8 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 			InitializeComponent();
 
 			this.dxSwitch1.Checked = true;
+
+			this.dxSwitch1.Widget.valueChanged += new WidgetEventHandler(dxSwitch1_WidgetEvent);
 		}
 
 		private void dxSwitch1_WidgetEvent(object sender, WidgetEventArgs e)

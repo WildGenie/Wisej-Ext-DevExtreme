@@ -23,3 +23,14 @@
 this.filterEventData = function (args) {
 
 };
+
+/**
+ * Process the options map before it is used to
+ * create or update the widget.
+ */
+this.filterOptions = function (options) {
+
+    if (options.itemTemplate)
+        options.itemTemplate = this.initFunction(options.itemTemplate);
+
+};

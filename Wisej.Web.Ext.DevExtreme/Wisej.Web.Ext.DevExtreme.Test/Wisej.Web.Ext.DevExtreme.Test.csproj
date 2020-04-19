@@ -48,6 +48,15 @@
     <EmbeddedResource Include="Data\TreeView\6.png" />
     <EmbeddedResource Include="Data\TreeView\7.png" />
     <EmbeddedResource Include="Data\TreeView\9.png" />
+    <EmbeddedResource Include="Data\List\01.png" />
+    <EmbeddedResource Include="Data\List\02.png" />
+    <EmbeddedResource Include="Data\List\03.png" />
+    <EmbeddedResource Include="Data\List\04.png" />
+    <EmbeddedResource Include="Data\List\05.png" />
+    <EmbeddedResource Include="Data\List\06.png" />
+    <EmbeddedResource Include="Data\List\07.png" />
+    <EmbeddedResource Include="Data\List\08.png" />
+    <EmbeddedResource Include="Data\List\09.png" />
     <Content Include="Data\TreeView\10.png" />
     <Content Include="Data\TreeView\14.png" />
     <Content Include="Data\TreeView\15.png" />
@@ -136,9 +145,6 @@
     <EmbeddedResource Include="Component\dxPolarChart.resx">
       <DependentUpon>dxPolarChart.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxPopup.resx">
-      <DependentUpon>dxPopup.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Component\dxProgressBar.resx">
       <DependentUpon>dxProgressBar.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,9 +162,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Component\dxSlideOut.resx">
       <DependentUpon>dxSlideOut.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxSortable.resx">
-      <DependentUpon>dxSortable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Component\dxSparkline.resx">
       <DependentUpon>dxSparkline.cs</DependentUpon>
@@ -192,6 +195,7 @@
     <None Include="Data\Gantt\dependencies.json" />
     <None Include="Data\Gantt\resources.json" />
     <None Include="Data\Gantt\resourceAssignments.json" />
+    <Content Include="Data\PivotGrid\fields.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -202,6 +206,25 @@
   <ItemGroup>
     <Content Include="Images\devextreme.png" />
     <Content Include="Images\DropDownButton\coach-woman.png" />
+    <Content Include="Images\logo-wisej-white.png" />
+    <EmbeddedResource Include="Images\TileView\1.jpg" />
+    <EmbeddedResource Include="Images\TileView\2.jpg" />
+    <EmbeddedResource Include="Images\TileView\3.jpg" />
+    <EmbeddedResource Include="Images\TileView\4.jpg" />
+    <EmbeddedResource Include="Images\TileView\5.jpg" />
+    <EmbeddedResource Include="Images\TileView\6.jpg" />
+    <EmbeddedResource Include="Images\TileView\7.jpg" />
+    <EmbeddedResource Include="Images\TileView\8.jpg" />
+    <EmbeddedResource Include="Images\TileView\9.jpg" />
+    <EmbeddedResource Include="Images\TileView\12.jpg" />
+    <EmbeddedResource Include="Images\TileView\14.jpg" />
+    <EmbeddedResource Include="Images\TileView\17.jpg" />
+    <EmbeddedResource Include="Images\TileView\20.jpg" />
+    <EmbeddedResource Include="Images\TileView\21.jpg" />
+    <EmbeddedResource Include="Images\TileView\22.jpg" />
+    <EmbeddedResource Include="Images\TileView\23.jpg" />
+    <Content Include="Images\Menu\1.png" />
+    <Content Include="Images\Menu\2.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -367,12 +390,6 @@
     <Compile Include="Component\dxPolarChart.Designer.cs">
       <DependentUpon>dxPolarChart.cs</DependentUpon>
     </Compile>
-    <Compile Include="Component\dxPopup.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxPopup.Designer.cs">
-      <DependentUpon>dxPopup.cs</DependentUpon>
-    </Compile>
     <Compile Include="Component\dxProgressBar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -408,12 +425,6 @@
     </Compile>
     <Compile Include="Component\dxSlideOut.Designer.cs">
       <DependentUpon>dxSlideOut.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxSortable.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxSortable.Designer.cs">
-      <DependentUpon>dxSortable.cs</DependentUpon>
     </Compile>
     <Compile Include="Component\dxSparkline.cs">
       <SubType>UserControl</SubType>

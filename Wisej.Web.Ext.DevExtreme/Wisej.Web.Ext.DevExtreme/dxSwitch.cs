@@ -54,19 +54,13 @@ namespace Wisej.Web.Ext.DevExtreme
 		public override string Text { get => base.Text; set => base.Text = value; }
 
 		/// <summary>
-		/// Specifes the checked state of the Switch
+		/// Specifies the checked state of the Switch
 		/// </summary>
 		[DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
 		public bool Checked
 		{
-			get
-			{
-				return this.Options.value ?? false;
-			}
-			set
-			{
-				this.Options.value = value;
-			}
+			get { return this.Options.value ?? false; }
+			set { this.Options.value = value; }
 		}
 	}
 }

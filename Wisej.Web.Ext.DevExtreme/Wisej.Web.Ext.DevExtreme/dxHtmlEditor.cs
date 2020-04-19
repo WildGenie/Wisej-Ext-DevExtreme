@@ -17,6 +17,8 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+using System.ComponentModel;
+
 namespace Wisej.Web.Ext.DevExtreme
 {
 	/// <summary>
@@ -41,6 +43,16 @@ namespace Wisej.Web.Ext.DevExtreme
 				"valueChanged",
 				"optionChanged"
 			};
+		}
+
+		/// <summary>
+		/// Specifies the editor's value.
+		/// </summary>
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+		public string Value
+		{
+			get { return this.Options.value ?? ""; }
+			set { this.Options.value = value ?? ""; }
 		}
 	}
 }

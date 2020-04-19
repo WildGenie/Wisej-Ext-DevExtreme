@@ -17,6 +17,8 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+using System.ComponentModel;
+
 namespace Wisej.Web.Ext.DevExtreme
 {
 	/// <summary>
@@ -43,5 +45,14 @@ namespace Wisej.Web.Ext.DevExtreme
 			};
 		}
 
+		/// <summary>
+		/// The current number box value.
+		/// </summary>
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+		public double Value
+		{
+			get { return this.Options.value ?? 0; }
+			set { this.Options.value = value; }
+		}
 	}
 }

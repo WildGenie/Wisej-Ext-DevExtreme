@@ -17,6 +17,8 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+using System.ComponentModel;
+
 namespace Wisej.Web.Ext.DevExtreme
 {
 	/// <summary>
@@ -40,6 +42,46 @@ namespace Wisej.Web.Ext.DevExtreme
 			this.WidgetWiredEvents = new[] {
 				"valueChanged"
 			};
+		}
+
+		/// <summary>
+		/// The left edge of the interval currently selected using the range slider.
+		/// </summary>
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+		public double Start
+		{
+			get { return this.Options.start ?? 0; }
+			set { this.Options.start = value; }
+		}
+
+		/// <summary>
+		/// The right edge of the interval currently selected using the range slider.
+		/// </summary>
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+		public double End
+		{
+			get { return this.Options.end ?? 0; }
+			set { this.Options.end = value; }
+		}
+
+		/// <summary>
+		/// The minimum value the widget can accept.
+		/// </summary>
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+		public double Min
+		{
+			get { return this.Options.min ?? 0; }
+			set { this.Options.min = value; }
+		}
+
+		/// <summary>
+		/// The maximum value the widget can accept.
+		/// </summary>
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+		public double Max
+		{
+			get { return this.Options.max ?? 0; }
+			set { this.Options.max = value; }
 		}
 	}
 }

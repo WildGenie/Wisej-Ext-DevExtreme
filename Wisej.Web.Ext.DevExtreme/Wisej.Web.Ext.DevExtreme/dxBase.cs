@@ -26,6 +26,7 @@ using System.Drawing;
 using System.Drawing.Design;
 using System.Dynamic;
 using System.IO;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Wisej.Base;
 using Wisej.Core;
@@ -217,6 +218,7 @@ namespace Wisej.Web.Ext.DevExtreme
 		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		public override List<Package> Packages
 		{
+			[MethodImpl(MethodImplOptions.NoInlining)]
 			get
 			{
 				var packages = base.Packages;
@@ -226,6 +228,11 @@ namespace Wisej.Web.Ext.DevExtreme
 					{
 						Name = "jquery.js",
 						Source = this.GetResourceURL($"{RESOURCES_ROOT}/js/jquery.min.js")
+					});
+					packages.Add(new Package()
+					{
+						Name = "jszip.js",
+						Source = this.GetResourceURL($"{RESOURCES_ROOT}/js/jszip.min.js")
 					});
 					packages.Add(new Package()
 					{
@@ -320,6 +327,8 @@ namespace Wisej.Web.Ext.DevExtreme
 		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		public override string InitScript
 		{
+			// disable inlining or we lose the calling assembly in GetResourceString().
+			[MethodImpl(MethodImplOptions.NoInlining)]
 			get { return this.GetResourceString($"{NAMESPACE}.{this.GetControlType().Name}"); }
 			set { }
 		}

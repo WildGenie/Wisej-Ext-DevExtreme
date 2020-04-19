@@ -22,4 +22,26 @@
 // Returns a data map that can be converted to JSON.
 this.filterEventData = function (args) {
 
+	switch (args.type) {
+
+		case "rowClick":
+			return {
+
+				node: args.node,
+				rowIndex: args.rowIndex,
+				rowType: args.rowType,
+				values: args.values
+			};
+			break;
+		case "cellClick":
+			return {
+
+				columnIndex: args.columnIndex,
+				rowIndex: args.rowIndex,
+				rowType: args.rowType,
+				text: args.text,
+				value: args.value
+			};
+			break;
+	}
 };

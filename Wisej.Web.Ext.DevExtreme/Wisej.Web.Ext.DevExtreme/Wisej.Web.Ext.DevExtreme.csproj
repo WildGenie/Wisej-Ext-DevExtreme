@@ -109,9 +109,6 @@
     <Compile Include="dxHtmlEditor.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="dxSortable.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="dxLinearGauge.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -140,9 +137,6 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="dxPolarChart.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="dxPopup.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="dxProgressBar.cs">
@@ -379,9 +373,6 @@
     <EmbeddedResource Include="dxPolarChart.js">
       <DependentUpon>dxPolarChart.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dxPopup.js">
-      <DependentUpon>dxPopup.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="dxProgressBar.js">
       <DependentUpon>dxProgressBar.cs</DependentUpon>
     </EmbeddedResource>
@@ -399,9 +390,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="dxSlideOut.js">
       <DependentUpon>dxSlideOut.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="dxSortable.js">
-      <DependentUpon>dxSortable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dxSparkline.js">
       <DependentUpon>dxSparkline.cs</DependentUpon>
@@ -427,6 +415,9 @@
     <EmbeddedResource Include="dxTreeView.js">
       <DependentUpon>dxTreeView.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DevExtreme\js\jszip.min.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

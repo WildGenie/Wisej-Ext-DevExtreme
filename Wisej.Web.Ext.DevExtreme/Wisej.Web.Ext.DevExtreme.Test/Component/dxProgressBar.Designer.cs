@@ -56,6 +56,7 @@
 			this.dxProgressBar1.Location = new System.Drawing.Point(78, 139);
 			this.dxProgressBar1.Name = "dxProgressBar1";
 			this.dxProgressBar1.Size = new System.Drawing.Size(296, 34);
+			this.dxProgressBar1.TabIndex = 0;
 			// 
 			// dxProgressBar
 			// 

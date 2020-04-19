@@ -8,6 +8,8 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 		public dxSlideOut()
 		{
 			InitializeComponent();
+
+			this.dxSlideOut1.Widget.itemClick += new WidgetEventHandler(dxSlideOut1_WidgetEvent);
 		}
 
 		private void dxSlideOut1_WidgetEvent(object sender, WidgetEventArgs e)

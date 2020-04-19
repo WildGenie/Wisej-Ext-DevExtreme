@@ -8,6 +8,8 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 		public dxTreeList()
 		{
 			InitializeComponent();
+
+			this.dxTreeList1.Widget.cellClick += new WidgetEventHandler(dxTreeList1_WidgetEvent);
 		}
 
 		private void dxTreeList1_WidgetEvent(object sender, WidgetEventArgs e)

@@ -41,8 +41,8 @@ namespace Wisej.Web.Ext.DevExtreme
 				"pointClick",
 				"seriesClick",
 				"legendClick",
+				"seriesSelectionChanged"
 			};
 		}
-
 	}
 }

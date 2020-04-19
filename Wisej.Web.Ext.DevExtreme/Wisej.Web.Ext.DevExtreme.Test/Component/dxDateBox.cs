@@ -22,5 +22,17 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.dxDateBox1.Options.acceptCustomValue = this.checkBox1.Checked;
+			this.dxDateBox1.Options.activeStateEnabled = this.checkBox2.Checked;
+			this.dxDateBox1.Options.adaptivityEnabled = this.checkBox3.Checked;
+			this.dxDateBox1.Options.showAnalogClock = this.checkBox4.Checked;
+			this.dxDateBox1.Options.type = this.comboBox2.SelectedItem;
+			this.dxDateBox1.Options.stylingMode = this.comboBox1.SelectedItem;
+
+			this.dxDateBox1.Update();
+		}
 	}
 }

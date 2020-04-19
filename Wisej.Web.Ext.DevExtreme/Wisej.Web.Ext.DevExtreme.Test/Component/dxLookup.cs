@@ -18,5 +18,18 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.dxLookup1.Options.showDataBeforeSearch = this.checkBox1.Checked;
+			this.dxLookup1.Options.cleanSearchOnOpening = this.checkBox2.Checked;
+			this.dxLookup1.Options.closeOnOutsideClick = this.checkBox3.Checked;
+			this.dxLookup1.Options.isValid = this.checkBox4.Checked;
+			this.dxLookup1.Options.searchEnabled = this.checkBox5.Checked;
+			this.dxLookup1.Options.useNativeScrolling = this.checkBox6.Checked;
+			this.dxLookup1.Options.applyValueMode = this.comboBox1.SelectedItem;
+
+			this.dxLookup1.Update();
+		}
 	}
 }

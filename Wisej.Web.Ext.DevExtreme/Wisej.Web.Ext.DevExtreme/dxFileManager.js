@@ -22,4 +22,14 @@
 // Returns a data map that can be converted to JSON.
 this.filterEventData = function (args) {
 
+	switch (args.type)
+	{
+		case "selectedFileOpened":
+			return args.fileItem;
+			break;
+
+		default:
+			break;
+
+	}
 };

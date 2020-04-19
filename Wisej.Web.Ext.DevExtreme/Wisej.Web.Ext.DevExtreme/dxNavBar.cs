@@ -17,6 +17,8 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+using System.ComponentModel;
+
 namespace Wisej.Web.Ext.DevExtreme
 {
 	/// <summary>
@@ -43,6 +45,16 @@ namespace Wisej.Web.Ext.DevExtreme
 				"optionChanged",
 				"selectionChanged",
 			};
+		}
+
+		/// <summary>
+		/// The selected item object.
+		/// </summary>
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+		public string SelectedItem
+		{
+			get { return this.Options.selectedItem ?? ""; }
+			set { this.Options.selectedItem = value ?? ""; }
 		}
 	}
 }

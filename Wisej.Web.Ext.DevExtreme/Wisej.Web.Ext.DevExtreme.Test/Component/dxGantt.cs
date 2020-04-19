@@ -26,5 +26,16 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.dxGantt1.Options.allowSelection = this.checkBox1.Checked;
+			this.dxGantt1.Options.showResources = this.checkBox2.Checked;
+			this.dxGantt1.Options.showRowLines = this.checkBox3.Checked;
+			this.dxGantt1.Options.scaleType = this.comboBox2.Text.ToLower();
+			this.dxGantt1.Options.comboBoxTaskTitlePosition = this.comboBox1.Text.ToLower();
+
+			this.dxGantt1.Update();
+		}
 	}
 }

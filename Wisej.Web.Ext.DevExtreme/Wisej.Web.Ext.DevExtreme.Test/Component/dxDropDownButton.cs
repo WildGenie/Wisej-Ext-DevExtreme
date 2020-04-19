@@ -22,5 +22,16 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.dxDropDownButton1.Options.splitButton = this.checkBox1.Checked;
+			this.dxDropDownButton1.Options.showArrowIcon = this.checkBox2.Checked;
+			this.dxDropDownButton1.Options.focusStateEnabled = this.checkBox3.Checked;
+			this.dxDropDownButton1.Options.hoverStateEnabled = this.checkBox4.Checked;
+			this.dxDropDownButton1.Options.useSelectMode = this.checkBox5.Checked;
+
+			this.dxDropDownButton1.Update();
+		}
 	}
 }

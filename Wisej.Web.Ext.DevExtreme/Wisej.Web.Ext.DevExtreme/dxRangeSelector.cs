@@ -17,6 +17,8 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+using System.ComponentModel;
+
 namespace Wisej.Web.Ext.DevExtreme
 {
 	/// <summary>
@@ -43,5 +45,47 @@ namespace Wisej.Web.Ext.DevExtreme
 			};
 		}
 
+		/// <summary>
+		/// The range's start value.
+		/// </summary>
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+		public string StartValue
+		{
+			get { return this._startValue; }
+			set {
+				this._startValue = value;
+				this.Options.value = new { startValue = value, endValue = this._endValue };
+			}
+		}
+		private string _startValue = "";
+
+		/// <summary>
+		/// The range's end value.
+		/// </summary>
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+		public string EndValue
+		{
+			get { return this._endValue; }
+			set
+			{
+				this._endValue = value;
+				this.Options.value = new { startValue = _startValue, endValue = value };
+			}
+		}
+		private string _endValue = "";
+
+		/// <summary>
+		/// Configures the Range Selector's title
+		/// </summary>
+		/// 
+		/// <remarks>
+		/// Make sure your widget satisfies the minimum height and width requirement for the title.
+		/// </remarks>
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+		public string Title
+		{
+			get { return this.Options.title ?? ""; }
+			set { this.Options.title = value ?? ""; }
+		}
 	}
 }

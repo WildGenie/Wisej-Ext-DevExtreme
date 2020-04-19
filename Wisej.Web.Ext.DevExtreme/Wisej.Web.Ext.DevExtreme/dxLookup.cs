@@ -17,6 +17,8 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+using System.ComponentModel;
+
 namespace Wisej.Web.Ext.DevExtreme
 {
 	/// <summary>
@@ -45,6 +47,16 @@ namespace Wisej.Web.Ext.DevExtreme
 				"valueChanged",
 				"selectionChanged"
 			};
+		}
+
+		/// <summary>
+		/// Specifies the currently selected value.
+		/// </summary>
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+		public string Value
+		{
+			get { return this.Options.value ?? ""; }
+			set { this.Options.value = value ?? ""; }
 		}
 	}
 }

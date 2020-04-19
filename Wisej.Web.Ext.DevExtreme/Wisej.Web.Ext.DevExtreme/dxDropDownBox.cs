@@ -62,6 +62,7 @@ namespace Wisej.Web.Ext.DevExtreme
 		/// <summary>
 		/// Specifies the selected item in the DropDownBox.
 		/// </summary>
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
 		public string Value
 		{
 			get { return this.Options.text ?? ""; }

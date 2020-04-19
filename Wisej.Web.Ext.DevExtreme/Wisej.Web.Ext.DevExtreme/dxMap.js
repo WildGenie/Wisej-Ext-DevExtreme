@@ -23,3 +23,19 @@
 this.filterEventData = function (args) {
 
 };
+
+/**
+ * Resizes the hosted widget to always fit our container.
+ */
+this.resizeWidget = function () {
+
+	if (this.widget) {
+		var bounds = this.getBounds();
+		if (bounds) {
+			this.widget.option({
+				width: bounds.width,
+				height: bounds.height
+			});
+		}
+	}
+}

@@ -1,4 +1,7 @@
 ﻿using System;
+using System.IO;
+using System.Text.RegularExpressions;
+using System.Web;
 using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Test.Component
@@ -24,6 +27,10 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 			this.dxCircularGauge1.Value = (int)this.numericUpDown1.Value;
 			this.dxCircularGauge1.Options.scale.label.visible = this.checkBox1.Checked;
 			this.dxCircularGauge1.Options.scale.tickInterval = this.trackBar1.Value;
+			this.dxCircularGauge1.Options.geometry = new {
+				startAngle = this.numericUpDown2.Value,
+				endAngle = this.numericUpDown3.Value
+			};
 
 			this.dxCircularGauge1.Update();
 		}
@@ -46,6 +53,28 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 			};
 
 			return ranges;
+		}
+
+		private async void buttonExport_Click(object sender, EventArgs e)
+		{
+			var svgData = await this.dxCircularGauge1.Widget.svgAsync();
+
+			using (MemoryStream ms = new MemoryStream())
+			{
+				var sw = new StreamWriter(ms);
+				try
+				{
+					sw.Write(Regex.Unescape(svgData));
+					sw.Flush();
+					ms.Seek(0, SeekOrigin.Begin);
+
+					Application.Download(ms, "circularGauge.svg");
+				}
+				finally
+				{
+					sw.Dispose();
+				}
+			}
 		}
 	}
 }

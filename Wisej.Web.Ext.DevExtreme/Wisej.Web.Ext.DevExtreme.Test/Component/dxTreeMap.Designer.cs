@@ -61,6 +61,7 @@
 			this.dxTreeMap1.Name = "dxTreeMap1";
 			this.dxTreeMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxTreeMap1.Options"))));
 			this.dxTreeMap1.Size = new System.Drawing.Size(415, 275);
+			this.dxTreeMap1.TabIndex = 0;
 			this.dxTreeMap1.Text = "dxTreeMap1";
 			this.dxTreeMap1.WidgetFunctions = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction[0];
 			// 

@@ -10,8 +10,6 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 		{
 			InitializeComponent();
 
-			this.dxDataGrid1.Options.dataSource = Wisej.Core.WisejSerializer.Parse(File.ReadAllText(Application.MapPath("Data/DataGrid/data.json")));
-
 			this.dxDataGrid1.Widget.cellClick += new WidgetEventHandler(dxDataGrid1_WidgetEvent);
 		}
 
@@ -26,10 +24,25 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
+			this.dxDataGrid1.Options.allowColumnResizing = this.checkBox2.Checked;
+			this.dxDataGrid1.Options.allowColumnReordering = this.checkBox1.Checked;
+			this.dxDataGrid1.Options.autoNavigateToFocusedRow = this.checkBox3.Checked;
+			this.dxDataGrid1.Options.cellHintEnabled = this.checkBox4.Checked;
+			this.dxDataGrid1.Options.columnAutoWidth = this.checkBox5.Checked;
+			this.dxDataGrid1.Options.columnHidingEnabled = this.checkBox6.Checked;
+			this.dxDataGrid1.Options.wordWrapEnabled = this.checkBox7.Checked;
 
+			this.dxDataGrid1.Update();
+		}
 
-			this.dxDataGrid1.Options.allowColumnResizing = this.checkBoxAllowColumnResizing.Checked;
-			this.dxDataGrid1.Options.allowColumnReordering = this.checkBoxAllowColumnReordering.Checked;
+		private void buttonExport_Click(object sender, EventArgs e)
+		{
+			this.dxDataGrid1.Widget.exportToExcel(false);
+		}
+
+		private void dxDataGrid_Load(object sender, EventArgs e)
+		{
+			this.dxDataGrid1.Options.dataSource = JSON.Parse(File.ReadAllText(Application.MapPath("Data/DataGrid/data.json")));
 		}
 	}
 }

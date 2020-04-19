@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Text.RegularExpressions;
 using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Test.Component
@@ -20,6 +22,39 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 				MessageBoxIcon.Information);
 
 			Application.Play(MessageBoxIcon.Information);
+		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.dxFunnel1.Options.palette = this.comboBox2.Text;
+			this.dxFunnel1.Options.algorithm = this.comboBox1.Text;
+			this.dxFunnel1.Options.hoverEnabled = this.checkBox1.Checked;
+			this.dxFunnel1.Options.inverted = this.checkBox2.Checked;
+			this.dxFunnel1.Options.sortData = this.checkBox3.Checked;
+
+			this.dxFunnel1.Update();
+		}
+
+		private async void buttonExport_Click(object sender, EventArgs e)
+		{
+			var data = await this.dxFunnel1.Widget.svgAsync();
+
+			using (MemoryStream ms = new MemoryStream())
+			{
+				var sw = new StreamWriter(ms);
+				try
+				{
+					sw.Write(Regex.Unescape(data));
+					sw.Flush();
+					ms.Seek(0, SeekOrigin.Begin);
+
+					Application.Download(ms, "funnel.svg");
+				}
+				finally
+				{
+					sw.Dispose();
+				}
+			}
 		}
 	}
 }

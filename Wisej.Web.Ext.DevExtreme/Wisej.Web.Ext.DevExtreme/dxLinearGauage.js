@@ -19,7 +19,3 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-// Returns a data map that can be converted to JSON.
-this.filterEventData = function (args) {
-
-};

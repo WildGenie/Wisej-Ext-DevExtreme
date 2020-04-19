@@ -12,7 +12,7 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 
 			this.dxDropDownBox1.Value = "3";
 
-			this.dxDropDownBox1.Options.dataSource = Wisej.Core.WisejSerializer.Parse(File.ReadAllText(Application.MapPath("Data/DropDownBox/customers.json")));
+			//this.dxDropDownBox1.Options.dataSource = Wisej.Core.WisejSerializer.Parse(File.ReadAllText(Application.MapPath("Data/DropDownBox/customers.json")));
 
 			this.dxDropDownBox1.Widget.input += new WidgetEventHandler(dxDropDownBox1_WidgetEvent);
 			this.dxDropDownBox1.Widget.valueChanged += new WidgetEventHandler(dxDropDownBox1_WidgetEvent);
@@ -31,6 +31,11 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
+			this.dxDropDownBox1.Options.showClearButton = this.checkBox1.Checked;
+			this.dxDropDownBox1.Options.showDropDownButton = this.checkBox2.Checked;
+			this.dxDropDownBox1.Options.acceptCustomValue = this.checkBox3.Checked;
+			this.dxDropDownBox1.Options.openOnFieldClick = this.checkBox4.Checked;
+
 			this.dxDropDownBox1.Update();
 		}
 	}

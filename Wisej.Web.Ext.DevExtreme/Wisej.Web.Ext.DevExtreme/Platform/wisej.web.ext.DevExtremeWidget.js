@@ -241,6 +241,8 @@ qx.Class.define("wisej.web.ext.DevExtremeWidget", {
 
 			function callback(args) {
 
+				args.container = me;
+
 				if (handler)
 					handler.call(this, args);
 
@@ -278,6 +280,14 @@ qx.Class.define("wisej.web.ext.DevExtremeWidget", {
 						return new Function(functions[i].source);
 					}
 				}
+			}
+		},
+
+		initStyle: function (name) {
+
+			if (typeof (name) === "string") {
+
+				return $("#" + name);
 			}
 		},
 

@@ -52,11 +52,11 @@
 			// 
 			// dxSwitch1
 			// 
-			this.dxSwitch1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+			this.dxSwitch1.Anchor = Wisej.Web.AnchorStyles.None;
 			this.dxSwitch1.Location = new System.Drawing.Point(176, 142);
 			this.dxSwitch1.Name = "dxSwitch1";
 			this.dxSwitch1.Size = new System.Drawing.Size(100, 28);
-			this.dxSwitch1.Text = "dxSwitch1";
+			this.dxSwitch1.TabIndex = 0;
 			// 
 			// dxSwitch
 			// 

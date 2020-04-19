@@ -8,6 +8,9 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 		public dxPolarChart()
 		{
 			InitializeComponent();
+
+			this.dxPolarChart1.Widget.pointClick += new WidgetEventHandler(dxPolarChart1_WidgetEvent);
+			this.dxPolarChart1.Widget.seriesSelectionChanged += new WidgetEventHandler(dxPolarChart1_WidgetEvent);
 		}
 
 		private void dxPolarChart1_WidgetEvent(object sender, WidgetEventArgs e)

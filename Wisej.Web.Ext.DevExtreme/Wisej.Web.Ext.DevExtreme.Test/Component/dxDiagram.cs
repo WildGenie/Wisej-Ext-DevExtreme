@@ -20,5 +20,16 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			var units = new String[] { "in", "cm", "px" };
+			this.dxDiagram1.Options.units = units[this.comboBox1.SelectedIndex].ToLower();
+			this.dxDiagram1.Options.simpleView = this.checkBox2.Checked;
+			this.dxDiagram1.Options.snapToGrid = this.checkBox1.Checked;
+			this.dxDiagram1.Options.showGrid = this.checkBox3.Checked;
+
+			this.dxDiagram1.Update();
+		}
 	}
 }

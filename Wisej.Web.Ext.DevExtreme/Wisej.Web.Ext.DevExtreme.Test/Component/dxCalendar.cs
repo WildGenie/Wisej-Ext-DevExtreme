@@ -23,8 +23,12 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.dxCalendar1.Options.showTodayButton = this.checkBoxShowTodayButton.Checked;
-			this.dxCalendar1.Options.firstDayOfWeek = this.comboBoxFirstDayOfWeek.SelectedIndex;
+			this.dxCalendar1.Options.activeStateEnabled = this.checkBox1.Checked;
+			this.dxCalendar1.Options.showTodayButton = this.checkBox2.Checked;
+			this.dxCalendar1.Options.focusStateEnabled = this.checkBox3.Checked;
+			this.dxCalendar1.Options.hoverStateEnabled = this.checkBox4.Checked;
+			this.dxCalendar1.Options.firstDayOfWeek = this.comboBox1.SelectedIndex;
+			this.dxCalendar1.Options.zoomLevel = this.comboBox2.SelectedItem;
 
 			this.dxCalendar1.Update();
 		}

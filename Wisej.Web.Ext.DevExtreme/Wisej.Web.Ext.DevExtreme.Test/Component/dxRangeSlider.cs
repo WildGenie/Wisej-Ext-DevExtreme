@@ -8,6 +8,8 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 		public dxRangeSlider()
 		{
 			InitializeComponent();
+
+			this.dxRangeSlider1.Widget.valueChanged += new WidgetEventHandler(dxRangeSlider1_WidgetEvent);
 		}
 
 		private void dxRangeSlider1_WidgetEvent(object sender, WidgetEventArgs e)

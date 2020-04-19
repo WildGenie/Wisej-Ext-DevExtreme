@@ -60,6 +60,7 @@
 			this.dxToolbar1.Name = "dxToolbar1";
 			this.dxToolbar1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxToolbar1.Options"))));
 			this.dxToolbar1.Size = new System.Drawing.Size(453, 38);
+			this.dxToolbar1.TabIndex = 0;
 			this.dxToolbar1.Text = "dxToolbar1";
 			widgetFunction1.Name = "click";
 			widgetFunction1.Source = "DevExpress.ui.notify(\"clicked!\");";

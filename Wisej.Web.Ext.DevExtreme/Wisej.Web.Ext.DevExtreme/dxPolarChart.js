@@ -22,4 +22,16 @@
 // Returns a data map that can be converted to JSON.
 this.filterEventData = function (args) {
 
+	switch (args.type) {
+
+		case "legendClick":
+		case "seriesClick":
+			return args.target.index;
+			break;
+
+		case "pointClick":
+			return args.target.index;
+			break;
+
+	}
 };

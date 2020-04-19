@@ -8,6 +8,8 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 		public dxTreeMap()
 		{
 			InitializeComponent();
+
+			this.dxTreeMap1.Widget.click += new WidgetEventHandler(dxTreeMap1_WidgetEvent);
 		}
 
 		private void dxTreeMap1_WidgetEvent(object sender, WidgetEventArgs e)
