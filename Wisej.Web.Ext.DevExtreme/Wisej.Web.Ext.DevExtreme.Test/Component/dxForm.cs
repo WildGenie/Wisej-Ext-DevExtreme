@@ -3,13 +3,13 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Test.Component
 {
-	public partial class dxForm : Wisej.Web.Ext.DevExtreme.Test.Component.TestBase
+	public partial class dxForm : TestBase
 	{
 		public dxForm()
 		{
 			InitializeComponent();
 
-			this.dxForm1.Widget.fieldDataChanged += new WidgetEventHandler(dxForm1_WidgetEvent);
+			this.dxForm1.Instance.fieldDataChanged += new WidgetEventHandler(dxForm1_WidgetEvent);
 		}
 
 		private void dxForm1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -34,7 +34,7 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			this.dxForm1.Widget.resetValues();
+			this.dxForm1.Instance.resetValues();
 		}
 	}
 }

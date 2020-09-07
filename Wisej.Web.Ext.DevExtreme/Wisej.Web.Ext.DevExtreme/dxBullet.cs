@@ -38,7 +38,7 @@ namespace Wisej.Web.Ext.DevExtreme
 		/// <param name="options">Initial set of options.</param>
 		public dxBullet(object options) : base("dxBullet", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"drawn",
 				"exported",
 				"exporting",

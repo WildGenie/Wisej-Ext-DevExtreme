@@ -37,7 +37,7 @@ namespace Wisej.Web.Ext.DevExtreme
 		/// <param name="options">Initial set of options.</param>
 		public dxSlideOut(object options) : base("dxSlideOut", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"itemHold",
 				"itemClick",
 			};

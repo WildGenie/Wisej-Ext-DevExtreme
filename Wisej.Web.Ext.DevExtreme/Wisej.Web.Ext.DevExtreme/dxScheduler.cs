@@ -37,7 +37,7 @@ namespace Wisej.Web.Ext.DevExtreme
 		/// <param name="options">Initial set of options.</param>
 		public dxScheduler(object options) : base("dxScheduler", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"cellClick",
 				"appointmentAdded",
 				"appointmentClick",

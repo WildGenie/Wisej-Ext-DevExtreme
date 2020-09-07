@@ -3,7 +3,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Test.Component
 {
-	public partial class dxDateBox : Wisej.Web.Ext.DevExtreme.Test.Component.TestBase
+	public partial class dxDateBox : TestBase
 	{
 		public dxDateBox()
 		{
@@ -11,7 +11,7 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 
 			this.dxDateBox1.Value = "2020-01-01";
 
-			this.dxDateBox1.Widget.valueChanged += new WidgetEventHandler(dxDateBox1_WidgetEvent);
+			this.dxDateBox1.Instance.valueChanged += new WidgetEventHandler(dxDateBox1_WidgetEvent);
 		}
 
 		private void dxDateBox1_WidgetEvent(object sender, WidgetEventArgs e)

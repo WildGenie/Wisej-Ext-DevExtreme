@@ -37,7 +37,7 @@ namespace Wisej.Web.Ext.DevExtreme
 		/// <param name="options">Initial set of options.</param>
 		public dxSpeedDialAction(object options) : base("dxSpeedDialAction", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"click",
 			};
 		}

@@ -39,7 +39,7 @@ namespace Wisej.Web.Ext.DevExtreme
 		/// <param name="options">Initial set of options.</param>
 		public dxProgressBar(object options) : base("dxProgressBar", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"complete",
 				"valueChanged"
 			};

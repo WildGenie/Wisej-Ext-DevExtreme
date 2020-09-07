@@ -3,13 +3,13 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Test.Component
 {
-	public partial class dxTreeMap : Wisej.Web.Ext.DevExtreme.Test.Component.TestBase
+	public partial class dxTreeMap : TestBase
 	{
 		public dxTreeMap()
 		{
 			InitializeComponent();
 
-			this.dxTreeMap1.Widget.click += new WidgetEventHandler(dxTreeMap1_WidgetEvent);
+			this.dxTreeMap1.Instance.click += new WidgetEventHandler(dxTreeMap1_WidgetEvent);
 		}
 
 		private void dxTreeMap1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -19,6 +19,19 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 				MessageBoxIcon.Information);
 
 			Application.Play(MessageBoxIcon.Information);
+		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.dxTreeMap1.Options.interactWithGroup = this.checkBox1.Checked;
+			this.dxTreeMap1.Options.layoutDirection = this.comboBox1.SelectedItem;
+			this.dxTreeMap1.Options.colorizer = new
+			{
+				palette = this.comboBox2.SelectedItem
+			};
+			this.dxTreeMap1.Options.selectionMode = this.comboBox3.SelectedItem;
+
+			this.dxTreeMap1.Update();
 		}
 	}
 }

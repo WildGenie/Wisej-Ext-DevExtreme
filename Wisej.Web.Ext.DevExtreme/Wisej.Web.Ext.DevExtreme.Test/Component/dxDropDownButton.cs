@@ -3,7 +3,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Test.Component
 {
-	public partial class dxDropDownButton : Wisej.Web.Ext.DevExtreme.Test.Component.TestBase
+	public partial class dxDropDownButton : TestBase
 	{
 		public dxDropDownButton()
 		{
@@ -11,7 +11,7 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 
 			this.dxDropDownButton1.Text = "dxDropDownButton1";
 
-			this.dxDropDownButton1.Widget.buttonClick += new WidgetEventHandler(dxDropDownButton1_WidgetEvent);
+			this.dxDropDownButton1.Instance.buttonClick += new WidgetEventHandler(dxDropDownButton1_WidgetEvent);
 		}
 
 		private void dxDropDownButton1_WidgetEvent(object sender, WidgetEventArgs e)

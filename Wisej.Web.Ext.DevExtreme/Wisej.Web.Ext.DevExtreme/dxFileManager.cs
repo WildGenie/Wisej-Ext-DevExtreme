@@ -37,7 +37,7 @@ namespace Wisej.Web.Ext.DevExtreme
 		/// <param name="options">Initial set of options.</param>
 		public dxFileManager(object options) : base("dxFileManager", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"selectedFileOpened",
 				"currentDirectoryChanged",
 			};

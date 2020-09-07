@@ -39,7 +39,7 @@ namespace Wisej.Web.Ext.DevExtreme
 		/// <param name="options">Initial set of options.</param>
 		public dxFilterBuilder(object options) : base("dxFilterBuilder", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"valueChanged",
 				"editorPrepared",
 				"editorPreparing",

@@ -3,15 +3,15 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Test.Component
 {
-	public partial class dxFileManager : Wisej.Web.Ext.DevExtreme.Test.Component.TestBase
+	public partial class dxFileManager : TestBase
 	{
 		public dxFileManager()
 		{
 			InitializeComponent();
 
-			this.dxFileManager1.Widget.selectedFileOpened += new WidgetEventHandler(dxFileManager1_WidgetEvent);
+			this.dxFileManager1.Instance.selectedFileOpened += new WidgetEventHandler(dxFileManager1_WidgetEvent);
 
-			this.dxFileManager1.Widget.currentDirectoryChanged += new WidgetEventHandler(dxFileManager1_WidgetEvent);
+			this.dxFileManager1.Instance.currentDirectoryChanged += new WidgetEventHandler(dxFileManager1_WidgetEvent);
 		}
 
 		private void dxFileManager1_WidgetEvent(object sender, WidgetEventArgs e)

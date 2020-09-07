@@ -3,7 +3,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Test.Component
 {
-	public partial class dxLinearGauge : Wisej.Web.Ext.DevExtreme.Test.Component.TestBase
+	public partial class dxLinearGauge : TestBase
 	{
 		public dxLinearGauge()
 		{

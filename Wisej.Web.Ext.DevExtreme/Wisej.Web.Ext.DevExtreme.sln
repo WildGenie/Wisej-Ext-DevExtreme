@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.Web.Ext.DevExtreme", "Wisej.Web.Ext.DevExtreme\Wisej.Web.Ext.DevExtreme.csproj", "{5242282D-5AC6-4BC4-B28D-25C5B573ABA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.Web.Ext.DevExtreme.Test", "Wisej.Web.Ext.DevExtreme.Test\Wisej.Web.Ext.DevExtreme.Test.csproj", "{3CF70E34-BB81-4D95-83CF-972ECCF063E0}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{5242282D-5AC6-4BC4-B28D-25C5B573ABA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5242282D-5AC6-4BC4-B28D-25C5B573ABA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5242282D-5AC6-4BC4-B28D-25C5B573ABA0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3CF70E34-BB81-4D95-83CF-972ECCF063E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3CF70E34-BB81-4D95-83CF-972ECCF063E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3CF70E34-BB81-4D95-83CF-972ECCF063E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3CF70E34-BB81-4D95-83CF-972ECCF063E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

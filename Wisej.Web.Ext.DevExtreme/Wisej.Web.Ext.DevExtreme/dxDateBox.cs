@@ -39,7 +39,7 @@ namespace Wisej.Web.Ext.DevExtreme
 		/// <param name="options">Initial set of options.</param>
 		public dxDateBox(object options) : base("dxDateBox", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"cut",
 				"copy",
 				"input",

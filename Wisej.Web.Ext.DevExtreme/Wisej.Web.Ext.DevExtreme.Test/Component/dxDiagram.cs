@@ -3,13 +3,13 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Test.Component
 {
-	public partial class dxDiagram : Wisej.Web.Ext.DevExtreme.Test.Component.TestBase
+	public partial class dxDiagram : TestBase
 	{
 		public dxDiagram()
 		{
 			InitializeComponent();
 
-			this.dxDiagram1.Widget.itemClick += new WidgetEventHandler(dxDiagram1_WidgetEvent);
+			this.dxDiagram1.Instance.itemClick += new WidgetEventHandler(dxDiagram1_WidgetEvent);
 		}
 
 		private void dxDiagram1_WidgetEvent(object sender, WidgetEventArgs e)

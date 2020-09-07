@@ -3,13 +3,13 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Test.Component
 {
-	public partial class dxHtmlEditor : Wisej.Web.Ext.DevExtreme.Test.Component.TestBase
+	public partial class dxHtmlEditor : TestBase
 	{
 		public dxHtmlEditor()
 		{
 			InitializeComponent();
 
-			this.dxHtmlEditor1.Widget.valueChanged += new WidgetEventHandler(dxHtmlEditor1_WidgetEvent);
+			this.dxHtmlEditor1.Instance.valueChanged += new WidgetEventHandler(dxHtmlEditor1_WidgetEvent);
 		}
 
 		private void dxHtmlEditor1_WidgetEvent(object sender, WidgetEventArgs e)

@@ -5,14 +5,14 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Test.Component
 {
-	public partial class dxFunnel : Wisej.Web.Ext.DevExtreme.Test.Component.TestBase
+	public partial class dxFunnel : TestBase
 	{
 		public dxFunnel()
 		{
 			InitializeComponent();
 
-			this.dxFunnel1.Widget.itemClick += new WidgetEventHandler(dxFunnel1_WidgetEvent);
-			this.dxFunnel1.Widget.legendClick += new WidgetEventHandler(dxFunnel1_WidgetEvent);
+			this.dxFunnel1.Instance.itemClick += new WidgetEventHandler(dxFunnel1_WidgetEvent);
+			this.dxFunnel1.Instance.legendClick += new WidgetEventHandler(dxFunnel1_WidgetEvent);
 		}
 
 		private void dxFunnel1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -37,7 +37,7 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 
 		private async void buttonExport_Click(object sender, EventArgs e)
 		{
-			var data = await this.dxFunnel1.Widget.svgAsync();
+			var data = await this.dxFunnel1.Instance.svgAsync();
 
 			using (MemoryStream ms = new MemoryStream())
 			{

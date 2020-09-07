@@ -1,15 +1,14 @@
 ﻿using System;
-using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Test.Component
 {
-	public partial class dxCalendar : Wisej.Web.Ext.DevExtreme.Test.Component.TestBase
+	public partial class dxCalendar : TestBase
 	{
 		public dxCalendar()
 		{
 			InitializeComponent();
 
-			this.dxCalendar1.Widget.valueChanged += new WidgetEventHandler(dxCalendar1_WidgetEvent);
+			this.dxCalendar1.Instance.valueChanged += new WidgetEventHandler(dxCalendar1_WidgetEvent);
 		}
 
 		private void dxCalendar1_WidgetEvent(object sender, WidgetEventArgs e)

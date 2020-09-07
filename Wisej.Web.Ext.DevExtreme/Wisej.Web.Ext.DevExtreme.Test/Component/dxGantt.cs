@@ -4,7 +4,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Test.Component
 {
-	public partial class dxGantt : Wisej.Web.Ext.DevExtreme.Test.Component.TestBase
+	public partial class dxGantt : TestBase
 	{
 		public dxGantt()
 		{
@@ -15,7 +15,7 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 			this.dxGantt1.Options.resources.dataSource = Wisej.Core.WisejSerializer.Parse(File.ReadAllText(Application.MapPath("Data/Gantt/resources.json")));
 			this.dxGantt1.Options.resourceAssignments.dataSource = Wisej.Core.WisejSerializer.Parse(File.ReadAllText(Application.MapPath("Data/Gantt/resourceAssignments.json")));
 
-			this.dxGantt1.Widget.selectionChanged += new WidgetEventHandler(dxGantt1_WidgetEvent);
+			this.dxGantt1.Instance.selectionChanged += new WidgetEventHandler(dxGantt1_WidgetEvent);
 		}
 
 		private void dxGantt1_WidgetEvent(object sender, WidgetEventArgs e)

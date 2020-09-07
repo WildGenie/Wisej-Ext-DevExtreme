@@ -3,13 +3,13 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Test.Component
 {
-	public partial class dxColorBox : Wisej.Web.Ext.DevExtreme.Test.Component.TestBase
+	public partial class dxColorBox : TestBase
 	{
 		public dxColorBox()
 		{
 			InitializeComponent();
 
-			this.dxColorBox1.Widget.valueChanged += new WidgetEventHandler(dxColorBox1_WidgetEvent);
+			this.dxColorBox1.Instance.valueChanged += new WidgetEventHandler(dxColorBox1_WidgetEvent);
 		}
 
 		private void dxColorBox1_WidgetEvent(object sender, WidgetEventArgs e)

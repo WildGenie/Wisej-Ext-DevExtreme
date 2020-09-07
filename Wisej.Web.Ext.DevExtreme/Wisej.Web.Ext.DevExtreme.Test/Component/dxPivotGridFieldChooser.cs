@@ -4,7 +4,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Test.Component
 {
-	public partial class dxPivotGridFieldChooser : Wisej.Web.Ext.DevExtreme.Test.Component.TestBase
+	public partial class dxPivotGridFieldChooser : TestBase
 	{
 		public dxPivotGridFieldChooser()
 		{

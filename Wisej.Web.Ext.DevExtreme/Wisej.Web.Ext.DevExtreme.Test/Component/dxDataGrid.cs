@@ -4,13 +4,13 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Test.Component
 {
-	public partial class dxDataGrid : Wisej.Web.Ext.DevExtreme.Test.Component.TestBase
+	public partial class dxDataGrid : TestBase
 	{
 		public dxDataGrid()
 		{
 			InitializeComponent();
 
-			this.dxDataGrid1.Widget.cellClick += new WidgetEventHandler(dxDataGrid1_WidgetEvent);
+			this.dxDataGrid1.Instance.cellClick += new WidgetEventHandler(dxDataGrid1_WidgetEvent);
 		}
 
 		private void dxDataGrid1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -37,7 +37,7 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 
 		private void buttonExport_Click(object sender, EventArgs e)
 		{
-			this.dxDataGrid1.Widget.exportToExcel(false);
+			this.dxDataGrid1.Instance.exportToExcel(false);
 		}
 
 		private void dxDataGrid_Load(object sender, EventArgs e)

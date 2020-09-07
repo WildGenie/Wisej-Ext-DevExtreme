@@ -30,10 +30,10 @@
 		{
 			this.dxNavBar1 = new Wisej.Web.Ext.DevExtreme.dxNavBar();
 			this.dataRepeater1 = new Wisej.Web.DataRepeater();
-			this.pictureBox1 = new Wisej.Web.PictureBox();
-			this.labelName = new Wisej.Web.Label();
-			this.labelCategory = new Wisej.Web.Label();
 			this.linkLabelEmail = new Wisej.Web.LinkLabel();
+			this.labelCategory = new Wisej.Web.Label();
+			this.labelName = new Wisej.Web.Label();
+			this.pictureBox1 = new Wisej.Web.PictureBox();
 			this.checkBox1 = new Wisej.Web.CheckBox();
 			this.comboBox1 = new Wisej.Web.ComboBox();
 			this.numericUpDown1 = new Wisej.Web.NumericUpDown();
@@ -110,12 +110,23 @@
 			this.dataRepeater1.TabIndex = 3;
 			this.dataRepeater1.Text = "dataRepeater1";
 			// 
-			// pictureBox1
+			// linkLabelEmail
 			// 
-			this.pictureBox1.Location = new System.Drawing.Point(12, 8);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(87, 82);
-			this.pictureBox1.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
+			this.linkLabelEmail.AutoSize = true;
+			this.linkLabelEmail.Location = new System.Drawing.Point(105, 75);
+			this.linkLabelEmail.Name = "linkLabelEmail";
+			this.linkLabelEmail.Size = new System.Drawing.Size(36, 15);
+			this.linkLabelEmail.TabIndex = 3;
+			this.linkLabelEmail.Text = "Email";
+			// 
+			// labelCategory
+			// 
+			this.labelCategory.AutoSize = true;
+			this.labelCategory.Location = new System.Drawing.Point(105, 43);
+			this.labelCategory.Name = "labelCategory";
+			this.labelCategory.Size = new System.Drawing.Size(56, 15);
+			this.labelCategory.TabIndex = 2;
+			this.labelCategory.Text = "Outgoing";
 			// 
 			// labelName
 			// 
@@ -127,23 +138,12 @@
 			this.labelName.TabIndex = 1;
 			this.labelName.Text = "John Doe";
 			// 
-			// labelCategory
+			// pictureBox1
 			// 
-			this.labelCategory.AutoSize = true;
-			this.labelCategory.Location = new System.Drawing.Point(105, 43);
-			this.labelCategory.Name = "labelCategory";
-			this.labelCategory.Size = new System.Drawing.Size(56, 15);
-			this.labelCategory.TabIndex = 2;
-			this.labelCategory.Text = "Outgoing";
-			// 
-			// linkLabelEmail
-			// 
-			this.linkLabelEmail.AutoSize = true;
-			this.linkLabelEmail.Location = new System.Drawing.Point(105, 75);
-			this.linkLabelEmail.Name = "linkLabelEmail";
-			this.linkLabelEmail.Size = new System.Drawing.Size(36, 15);
-			this.linkLabelEmail.TabIndex = 3;
-			this.linkLabelEmail.Text = "Email";
+			this.pictureBox1.Location = new System.Drawing.Point(12, 8);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(87, 82);
+			this.pictureBox1.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
 			// 
 			// checkBox1
 			// 

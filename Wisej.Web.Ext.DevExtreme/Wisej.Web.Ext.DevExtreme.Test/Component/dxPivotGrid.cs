@@ -4,7 +4,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Test.Component
 {
-	public partial class dxPivotGrid : Wisej.Web.Ext.DevExtreme.Test.Component.TestBase
+	public partial class dxPivotGrid : TestBase
 	{
 		public dxPivotGrid()
 		{

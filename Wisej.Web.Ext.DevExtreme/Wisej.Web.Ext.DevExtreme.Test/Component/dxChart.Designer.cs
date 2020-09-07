@@ -102,7 +102,7 @@
 			this.dxChart1.TabIndex = 0;
 			this.dxChart1.Text = "dxChart1";
 			widgetFunction1.Name = "getDataSourceItems";
-			widgetFunction1.Source = "return this.widget.getDataSource()._items;";
+			widgetFunction1.Source = "return this.Instance.getDataSource()._items;";
 			this.dxChart1.WidgetFunctions = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction[] {
         widgetFunction1};
 			// 

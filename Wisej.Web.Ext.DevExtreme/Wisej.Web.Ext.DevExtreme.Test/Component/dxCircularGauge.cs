@@ -57,7 +57,7 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 
 		private async void buttonExport_Click(object sender, EventArgs e)
 		{
-			var svgData = await this.dxCircularGauge1.Widget.svgAsync();
+			var svgData = await this.dxCircularGauge1.Instance.svgAsync();
 
 			using (MemoryStream ms = new MemoryStream())
 			{

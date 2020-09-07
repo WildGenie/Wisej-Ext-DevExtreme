@@ -39,7 +39,7 @@ namespace Wisej.Web.Ext.DevExtreme
 		/// <param name="options">Initial set of options.</param>
 		public dxLinearGauge(object options) : base("dxLinearGauge", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"exported",
 				"exporting",
 				"fileSaving",

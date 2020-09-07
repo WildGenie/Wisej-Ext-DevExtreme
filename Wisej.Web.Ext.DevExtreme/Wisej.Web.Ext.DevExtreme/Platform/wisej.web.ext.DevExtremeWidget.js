@@ -344,10 +344,7 @@ qx.Class.define("wisej.web.ext.DevExtremeWidget", {
 		//
 		_onInitialized: function () {
 
-			if (wisej.web.DesignMode)
-				this.fireEvent("render");
-
-			this.fireEvent("initialized");
+			this.base(arguments);
 
 			if (this.initWidget)
 				this.initWidget();

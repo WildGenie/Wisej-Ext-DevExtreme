@@ -4,7 +4,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Test.Component
 {
-	public partial class dxNavBar : Wisej.Web.Ext.DevExtreme.Test.Component.TestBase
+	public partial class dxNavBar : TestBase
 	{
 		public dxNavBar()
 		{
@@ -17,7 +17,7 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 			pictureBox1.DataBindings.Add("ImageSource", this.dataRepeater1.DataSource, "image");
 			linkLabelEmail.DataBindings.Add("Text", this.dataRepeater1.DataSource, "email");
 
-			this.dxNavBar1.Widget.itemClick += new WidgetEventHandler(dxNavBar1_WidgetEvent);
+			this.dxNavBar1.Instance.itemClick += new WidgetEventHandler(dxNavBar1_WidgetEvent);
 		}
 
 		private void dxNavBar1_WidgetEvent(object sender, WidgetEventArgs e)

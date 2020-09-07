@@ -195,7 +195,6 @@
     <None Include="Data\Gantt\dependencies.json" />
     <None Include="Data\Gantt\resources.json" />
     <None Include="Data\Gantt\resourceAssignments.json" />
-    <Content Include="Data\PivotGrid\fields.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -485,24 +484,16 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.ApplicationServices" />
-    <Reference Include="System.Web.DynamicData" />
-    <Reference Include="System.Web.Entity" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="Wisej.Ext.MaterialDesign">
-      <HintPath>..\..\..\..\2.1\Wisej.Ext.MaterialDesign\bin\Wisej.Ext.MaterialDesign.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Framework">
-      <HintPath>..\..\..\..\..\Development\2.1\bin\Wisej.Framework.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Framework.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
+    <Reference Include="Wisej.Ext.MaterialDesign, Version=2.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Development\2.1\bin\Wisej.Framework.Design.dll</HintPath>
+      <HintPath>..\..\..\..\2.2\bin\Wisej.Ext.MaterialDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Wisej.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Development\2.2\bin\Wisej.Framework.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Web.Ext.DevExtreme">
       <HintPath>..\..\bin\Wisej.Web.Ext.DevExtreme.dll</HintPath>
@@ -528,7 +519,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49685/</IISUrl>
+          <IISUrl>http://localhost:65069/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -539,10 +530,10 @@
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+			 Other similar extension points exist, see Microsoft.Common.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
 </Project>

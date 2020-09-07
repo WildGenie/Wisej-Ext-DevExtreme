@@ -4,7 +4,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Test.Component
 {
-	public partial class dxDropDownBox : Wisej.Web.Ext.DevExtreme.Test.Component.TestBase
+	public partial class dxDropDownBox : TestBase
 	{
 		public dxDropDownBox()
 		{
@@ -14,8 +14,8 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 
 			//this.dxDropDownBox1.Options.dataSource = Wisej.Core.WisejSerializer.Parse(File.ReadAllText(Application.MapPath("Data/DropDownBox/customers.json")));
 
-			this.dxDropDownBox1.Widget.input += new WidgetEventHandler(dxDropDownBox1_WidgetEvent);
-			this.dxDropDownBox1.Widget.valueChanged += new WidgetEventHandler(dxDropDownBox1_WidgetEvent);
+			this.dxDropDownBox1.Instance.input += new WidgetEventHandler(dxDropDownBox1_WidgetEvent);
+			this.dxDropDownBox1.Instance.valueChanged += new WidgetEventHandler(dxDropDownBox1_WidgetEvent);
 		}
 
 		private void dxDropDownBox1_WidgetEvent(object sender, WidgetEventArgs e)

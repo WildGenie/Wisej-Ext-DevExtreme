@@ -3,7 +3,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Test.Component
 {
-	public partial class dxSwitch : Wisej.Web.Ext.DevExtreme.Test.Component.TestBase
+	public partial class dxSwitch : TestBase
 	{
 		public dxSwitch()
 		{
@@ -11,7 +11,7 @@ namespace Wisej.Web.Ext.DevExtreme.Test.Component
 
 			this.dxSwitch1.Checked = true;
 
-			this.dxSwitch1.Widget.valueChanged += new WidgetEventHandler(dxSwitch1_WidgetEvent);
+			this.dxSwitch1.Instance.valueChanged += new WidgetEventHandler(dxSwitch1_WidgetEvent);
 		}
 
 		private void dxSwitch1_WidgetEvent(object sender, WidgetEventArgs e)
