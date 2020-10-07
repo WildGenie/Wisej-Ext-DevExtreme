@@ -364,10 +364,13 @@ qx.Class.define("wisej.web.ext.DevExtremeWidget", {
 			} catch (ex) { }
 		}
 	},
-	destroy: function(){
 
-		if (this.widget)
-			this.widget.destroy();
+	destruct: function () {
+
+		if (this.widget) {
+			this.widget.dispose();
+			this.widget = null;
+		}
 	}
 });
 
