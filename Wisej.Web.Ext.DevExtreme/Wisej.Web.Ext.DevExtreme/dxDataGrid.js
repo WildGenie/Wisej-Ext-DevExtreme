@@ -25,24 +25,32 @@
  */
 this.filterOptions = function (options) {
 
-    if (options.columns) {
-        for (var i = 0; i < options.columns.length; i++) {
-            if (options.columns[i].cellTemplate) 
-                options.columns[i].cellTemplate = this.initFunction(options.columns[i].cellTemplate);
-        }
-    }
+	if (options.columns) {
+		for (var i = 0; i < options.columns.length; i++) {
+			if (options.columns[i].cellTemplate) 
+				options.columns[i].cellTemplate = this.initFunction(options.columns[i].cellTemplate);
+		}
+	}
 };
 
 // Returns a data map that can be converted to JSON.
 this.filterEventData = function (args) {
 
-    switch (args.type) {
-        case "cellClick":
-            return {
-                columnIndex: args.columnIndex,
-                rowIndex: args.rowIndex
-            };
-            break;
+	switch (args.type) {
 
-    }
+		case "cellClick":
+			return {
+				columnIndex: args.columnIndex,
+				rowIndex: args.rowIndex
+			};
+			break;
+
+		case "selectionChanged":
+			return {
+				currentDeselectedRowKeys: args.currentDeselectedRowKeys,
+				currentSelectedRowKeys: args.currentSelectedRowKeys,
+				selectedRowKeys: args.selectedRowKeys
+			};
+			break;
+	}
 };
