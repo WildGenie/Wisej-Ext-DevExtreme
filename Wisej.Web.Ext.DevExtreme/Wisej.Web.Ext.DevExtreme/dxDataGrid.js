@@ -43,7 +43,16 @@ this.filterEventData = function (args) {
 				columnIndex: args.columnIndex,
 				rowIndex: args.rowIndex
 			};
-			break;
+
+		case "keyDown":
+			return {
+				key: args.event.key,
+				altKey: args.event.altKey,
+				keyCode: args.event.keyCode,
+				ctrlKey: args.event.ctrlKey,
+				metaKey: args.event.metaKey,
+				shiftKey: args.event.shiftKey
+			};
 
 		case "selectionChanged":
 			return {
@@ -51,6 +60,5 @@ this.filterEventData = function (args) {
 				currentSelectedRowKeys: args.currentSelectedRowKeys,
 				selectedRowKeys: args.selectedRowKeys
 			};
-			break;
 	}
 };
