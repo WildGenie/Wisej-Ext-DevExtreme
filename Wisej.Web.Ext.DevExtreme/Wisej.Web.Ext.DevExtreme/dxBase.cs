@@ -18,16 +18,12 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Design;
-using System.Dynamic;
 using System.IO;
 using System.Runtime.CompilerServices;
-using System.Threading.Tasks;
 using Wisej.Base;
 using Wisej.Core;
 using Wisej.Design;
@@ -289,13 +285,29 @@ namespace Wisej.Web.Ext.DevExtreme
 					{
 						this.Packages.AddRange(this.Includes);
 					}
+
+					// add custom localization.
+					if (this.Locales != null)
+					{
+						this.Packages.AddRange(this.Locales);
+					}
+					// load the current locale.
+					var locale = Application.CurrentCulture.TwoLetterISOLanguageName;
+					if (locale != "en")
+					{
+						this.Packages.Add(new Package()
+						{
+							Name = $"dx.messages.{locale}.js",
+							Source = this.GetResourceURL($"{RESOURCES_ROOT}/js/localization/dx.messages_{locale}.js")
+						});
+					}
 				}
 				return packages;
 			}
 		}
 
 		/// <summary>
-		/// optional html to use as the container.
+		/// Optional HTML to use as the container.
 		/// </summary>
 		private string WidgetHtml { get; set; }
 

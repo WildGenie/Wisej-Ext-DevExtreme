@@ -105,6 +105,12 @@ qx.Class.define("wisej.web.ext.DevExtremeWidget", {
 			});
 
 			qx.event.Timer.once(this.resizeWidget, this, 0);
+
+			// initialize standard localization.
+			var lang = document.documentElement.lang;
+			if (DevExpress.localization.locale() != lang) {
+				DevExpress.localization.locale(lang)
+			}
 		},
 
 		/**
