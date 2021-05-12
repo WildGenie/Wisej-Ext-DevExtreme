@@ -41,10 +41,15 @@ namespace Wisej.Web.Ext.DevExtreme
 				"keyDown",
 				"rowClick",
 				"cellClick",
+				"initNewRow",
 				"rowDblClick",
 				"cellDblClick",
-				"editingStarted",
-				"selectionChanged"
+				"editCanceled",
+				"editingStart",
+				"editCanceling",
+				"selectionChanged",
+				"focusedRowChanged",
+				"focusedCellChanged"
 			};
 		}
 	}
