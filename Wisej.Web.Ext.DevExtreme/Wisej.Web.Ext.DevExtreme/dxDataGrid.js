@@ -31,6 +31,10 @@ this.filterOptions = function (options) {
 				options.columns[i].cellTemplate = this.initFunction(options.columns[i].cellTemplate);
 		}
 	}
+
+	if (options.masterDetail) {
+		options.masterDetail.template = this.initFunction(options.masterDetail.template);
+	}
 };
 
 // Returns a data map that can be converted to JSON.

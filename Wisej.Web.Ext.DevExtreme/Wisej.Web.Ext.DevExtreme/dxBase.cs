@@ -22,6 +22,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Design;
+using System.Globalization;
 using System.IO;
 using System.Runtime.CompilerServices;
 using Wisej.Base;
@@ -40,6 +41,7 @@ namespace Wisej.Web.Ext.DevExtreme
 		internal const string NAMESPACE = "Wisej.Web.Ext.DevExtreme";
 		internal const string RESOURCES_ROOT = "Wisej.Web.Ext.DevExtreme.DevExtreme";
 		internal const string THEMENAME_KEY = "Wisej.Web.Ext.DevExtreme.ThemeName";
+		internal const string CULTUREINFO_KEY = "Wisej.Web.Ext.DevExtreme.CultureInfo";
 
 		#region Constructors
 
@@ -94,7 +96,7 @@ namespace Wisej.Web.Ext.DevExtreme
 		#region Properties
 
 		/// <summary>
-		/// Returns or sets the theme for all the DevExtreme widgets in the application.
+		/// Returns or sets the theme for all the DevExtreme widgets in the session.
 		/// </summary>
 		public static string Theme
 		{
@@ -113,6 +115,33 @@ namespace Wisej.Web.Ext.DevExtreme
 						widget.Packages.Clear();
 						widget.Update();
 					}
+				}
+			}
+		}
+
+		/// <summary>
+		/// Returns or sets the culture for all the DevExtreme widgets in the session.
+		/// </summary>
+		public static CultureInfo Culture
+		{
+			get { return Application.Session[CULTUREINFO_KEY] ?? Application.CurrentCulture; }
+			set
+			{
+				if (value == null)
+					value = Application.CurrentCulture;
+
+				if (Culture != value)
+				{
+					Application.Session[CULTUREINFO_KEY] = value;
+
+					foreach (dxBase widget in Application.FindComponents(c => c is dxBase))
+					{
+						widget.Packages.Clear();
+						widget.Recreate();
+					}
+
+					// save the culture on the client side.
+					Application.Eval($"wisej.web.ext.DevExtremeWidget.locale='{value.TwoLetterISOLanguageName}'");
 				}
 			}
 		}
@@ -291,8 +320,9 @@ namespace Wisej.Web.Ext.DevExtreme
 					{
 						this.Packages.AddRange(this.Locales);
 					}
+
 					// load the current locale.
-					var locale = Application.CurrentCulture.TwoLetterISOLanguageName;
+					var locale = dxBase.Culture.TwoLetterISOLanguageName;
 					if (locale != "en")
 					{
 						this.Packages.Add(new Package()
