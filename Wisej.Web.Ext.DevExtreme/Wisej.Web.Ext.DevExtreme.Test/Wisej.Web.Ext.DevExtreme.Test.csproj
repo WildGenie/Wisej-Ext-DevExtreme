@@ -487,9 +487,8 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="Wisej.Ext.MaterialDesign, Version=2.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\2.2\bin\Wisej.Ext.MaterialDesign.dll</HintPath>
+    <Reference Include="Wisej.Ext.MaterialDesign">
+      <HintPath>..\..\..\..\..\..\..\DesenvolvimentoNET\Wisej\Extensions\wisej-extensions-2.2\Wisej.Ext.MaterialDesign\bin\Wisej.Ext.MaterialDesign.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

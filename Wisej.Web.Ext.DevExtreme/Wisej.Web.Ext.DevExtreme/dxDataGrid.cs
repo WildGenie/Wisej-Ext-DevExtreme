@@ -38,15 +38,22 @@ namespace Wisej.Web.Ext.DevExtreme
 		public dxDataGrid(object options) : base("dxDataGrid", options)
 		{
 			this.WiredEvents = new[] {
-				"keyDown",
-				"rowClick",
 				"cellClick",
-				"initNewRow",
-				"rowDblClick",
 				"cellDblClick",
 				"editCanceled",
-				"editingStart",
 				"editCanceling",
+				"editingStart",
+				"keyDown",
+				"initNewRow",
+				"rowClick",
+				"rowDblClick",
+				"rowInserted",
+				"rowInserting",
+				"rowPrepared",
+				"rowUpdated",
+				"rowUpdating",
+				"saved",
+				"saving",
 				"selectionChanged",
 				"focusedRowChanged",
 				"focusedCellChanged"
