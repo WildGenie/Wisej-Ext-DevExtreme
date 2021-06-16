@@ -169,7 +169,7 @@ namespace Wisej.Web.Ext.DevExtreme
 					{
 						// make sure to convert non-writable anonymous classes to
 						// our DynamicObject instance.
-						value = WisejSerializer.Parse(WisejSerializer.Serialize((object)value));
+						value = WisejSerializer.Parse(WisejSerializer.Serialize((object)value, WisejSerializerOptions.None));
 					}
 				}
 
@@ -253,6 +253,11 @@ namespace Wisej.Web.Ext.DevExtreme
 					{
 						Name = "dx.all.js",
 						Source = this.GetResourceURL($"{RESOURCES_ROOT}/js/dx.all.js")
+					});
+					packages.Add(new Package()
+					{
+						Name = "dx.aspnet.data.js",
+						Source = this.GetResourceURL($"{RESOURCES_ROOT}/js/dx.aspnet.data.js")
 					});
 					packages.Add(new Package()
 					{

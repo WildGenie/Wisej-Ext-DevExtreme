@@ -35,6 +35,15 @@ this.filterOptions = function (options) {
 	if (options.masterDetail) {
 		options.masterDetail.template = this.initFunction(options.masterDetail.template);
 	}
+
+	if (options.stateStoring) {
+		if (options.stateStoring.customLoad)
+			options.stateStoring.customLoad = this.initFunction(options.stateStoring.customLoad);
+
+		if (options.stateStoring.customSave)
+			options.stateStoring.customSave = this.initFunction(options.stateStoring.customSave);
+
+    }
 };
 
 // Returns a data map that can be converted to JSON.
