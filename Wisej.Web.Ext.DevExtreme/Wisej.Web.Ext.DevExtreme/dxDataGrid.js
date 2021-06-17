@@ -54,7 +54,8 @@ this.filterEventData = function (args) {
 		case "cellClick":
 			return {
 				columnIndex: args.columnIndex,
-				rowIndex: args.rowIndex
+				rowIndex: args.rowIndex,
+				value: args.value
 			};
 
 		case "keyDown":
@@ -67,11 +68,43 @@ this.filterEventData = function (args) {
 				shiftKey: args.event.shiftKey
 			};
 
+		case "initNewRow":
+			return {
+				data: args.data
+			};
+
+		case "rowClick":
+			return {
+				columns: args.columns,
+				data: args.data,
+				groupIndex: args.groupIndex,
+				isExpanded: args.isExpanded,
+				isNewRow: args.isNewRow,
+				isSelected: args.isSelected,
+				key: args.key,
+				rowIndex: args.rowIndex,
+				rowType: args.rowType,
+				values: args.values
+			};
+
+		case "rowInserted":
+			return {
+				data: args.data,
+				key: args.key
+			};
+
+		case "rowPrepared":
+			return {
+				data: args.data,
+				key: args.key
+			};
+
 		case "selectionChanged":
 			return {
 				currentDeselectedRowKeys: args.currentDeselectedRowKeys,
 				currentSelectedRowKeys: args.currentSelectedRowKeys,
 				selectedRowKeys: args.selectedRowKeys
 			};
+
 	}
 };
