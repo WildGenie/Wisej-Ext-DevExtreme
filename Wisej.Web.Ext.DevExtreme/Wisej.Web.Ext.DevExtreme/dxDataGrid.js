@@ -37,9 +37,13 @@ this.filterOptions = function (options) {
 	}
 
 	if (options.stateStoring) {
-		options.stateStoring.customLoad = this.initFunction(options.stateStoring.customLoad);
-		options.stateStoring.customSave = this.initFunction(options.stateStoring.customSave);
-	}
+		if (options.stateStoring.customLoad)
+			options.stateStoring.customLoad = this.initFunction(options.stateStoring.customLoad);
+
+		if (options.stateStoring.customSave)
+			options.stateStoring.customSave = this.initFunction(options.stateStoring.customSave);
+
+    }
 };
 
 // Returns a data map that can be converted to JSON.
@@ -50,8 +54,7 @@ this.filterEventData = function (args) {
 		case "cellClick":
 			return {
 				columnIndex: args.columnIndex,
-				rowIndex: args.rowIndex,
-				value: args.value
+				rowIndex: args.rowIndex
 			};
 
 		case "keyDown":
@@ -62,37 +65,6 @@ this.filterEventData = function (args) {
 				ctrlKey: args.event.ctrlKey,
 				metaKey: args.event.metaKey,
 				shiftKey: args.event.shiftKey
-			};
-
-		case "initNewRow":
-			return {
-				data: args.data
-			};
-
-		case "rowClick":
-			return {
-				columns: args.columns,
-				data: args.data,
-				groupIndex: args.groupIndex,
-				isExpanded: args.isExpanded,
-				isNewRow: args.isNewRow,
-				isSelected: args.isSelected,
-				key: args.key,
-				rowIndex: args.rowIndex,
-				rowType: args.rowType,
-				values: args.values
-			};
-
-		case "rowInserted":
-			return {
-				data: args.data,
-				key: args.key
-			};
-
-		case "rowPrepared":
-			return {
-				data: args.data,
-				key: args.key
 			};
 
 		case "selectionChanged":
