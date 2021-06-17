@@ -278,7 +278,7 @@ qx.Class.define("wisej.web.ext.DevExtremeWidget", {
 				var functions = this.getWidgetFunctions();
 				for (var i = 0; i < functions.length; i++) {
 					if (functions[i].name == name) {
-						return new Function(functions[i].source);
+						return this._makeFunctionWrapper(name, new Function(functions[i].source))
 					}
 				}
 			}
