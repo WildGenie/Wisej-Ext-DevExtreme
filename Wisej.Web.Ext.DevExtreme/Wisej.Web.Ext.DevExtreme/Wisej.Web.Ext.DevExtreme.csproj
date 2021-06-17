@@ -416,6 +416,9 @@
   <ItemGroup>
     <EmbeddedResource Include="DevExtreme\js\jszip.min.js" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DevExtreme\js\dx.aspnet.data.js" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>mkdir "$(ProjectDir)..\..\bin"
