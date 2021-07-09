@@ -78,6 +78,7 @@ this.filterEventData = function (args) {
 				columns: args.columns,
 				data: args.data,
 				groupIndex: args.groupIndex,
+				handled: args.handled,
 				isExpanded: args.isExpanded,
 				isNewRow: args.isNewRow,
 				isSelected: args.isSelected,
