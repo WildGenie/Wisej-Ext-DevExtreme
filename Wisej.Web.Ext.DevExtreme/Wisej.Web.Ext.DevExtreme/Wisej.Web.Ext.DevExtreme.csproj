@@ -419,6 +419,11 @@
   <ItemGroup>
     <EmbeddedResource Include="DevExtreme\js\dx.aspnet.data.js" />
   </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="DevExtreme\ts\dx.all.d.ts" />
+    <TypeScriptCompile Include="DevExtreme\ts\jquery.d.ts" />
+    <TypeScriptCompile Include="DevExtreme\ts\knockout.d.ts" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>mkdir "$(ProjectDir)..\..\bin"
