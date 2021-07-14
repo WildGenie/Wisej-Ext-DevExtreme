@@ -96,8 +96,16 @@ this.filterEventData = function (args) {
 
 		case "rowPrepared":
 			return {
+				columns: args.columns,
 				data: args.data,
-				key: args.key
+				groupIndex: args.groupIndex,
+				isExpanded: args.isExpanded,
+				isNewRow: args.isNewRow,
+				isSelected: args.isSelected,
+				key: args.key,
+				rowIndex: args.rowIndex,
+				rowType: args.rowType,
+				values: args.values
 			};
 
 		case "selectionChanged":
