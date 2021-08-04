@@ -424,6 +424,12 @@
     <TypeScriptCompile Include="DevExtreme\ts\jquery.d.ts" />
     <TypeScriptCompile Include="DevExtreme\ts\knockout.d.ts" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DevExtreme\js\exceljs.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DevExtreme\js\FileSaver.min.js" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>mkdir "$(ProjectDir)..\..\bin"

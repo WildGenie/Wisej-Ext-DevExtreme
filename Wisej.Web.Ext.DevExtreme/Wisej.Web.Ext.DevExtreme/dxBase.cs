@@ -336,6 +336,19 @@ namespace Wisej.Web.Ext.DevExtreme
 							Source = this.GetResourceURL($"{RESOURCES_ROOT}/js/localization/dx.messages_{locale}.js")
 						});
 					}
+
+					// added by IvanGB - necessary for dxDataGrid Export to Excel
+					packages.Add(new Package()
+					{
+						Name = "exceljs.js",
+						Source = this.GetResourceURL($"{RESOURCES_ROOT}/js/exceljs.min.js")
+					});
+					packages.Add(new Package()
+					{
+						Name = "FileSaver.js",
+						Source = this.GetResourceURL($"{RESOURCES_ROOT}/js/FileSaver.min.js")
+					});
+
 				}
 				return packages;
 			}

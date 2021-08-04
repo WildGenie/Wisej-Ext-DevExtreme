@@ -36,6 +36,10 @@ this.filterOptions = function (options) {
 		options.masterDetail.template = this.initFunction(options.masterDetail.template);
 	}
 
+	if (options.onExporting) {
+		options.onExporting = this.initFunction(options.onExporting);
+	}
+
 	if (options.stateStoring) {
 		if (options.stateStoring.customLoad)
 			options.stateStoring.customLoad = this.initFunction(options.stateStoring.customLoad);
@@ -79,6 +83,20 @@ this.filterEventData = function (args) {
 				data: args.data,
 				groupIndex: args.groupIndex,
 				handled: args.handled,
+				isExpanded: args.isExpanded,
+				isNewRow: args.isNewRow,
+				isSelected: args.isSelected,
+				key: args.key,
+				rowIndex: args.rowIndex,
+				rowType: args.rowType,
+				values: args.values
+			};
+
+		case "rowDblClick":
+			return {
+				columns: args.columns,
+				data: args.data,
+				groupIndex: args.groupIndex,
 				isExpanded: args.isExpanded,
 				isNewRow: args.isNewRow,
 				isSelected: args.isSelected,
