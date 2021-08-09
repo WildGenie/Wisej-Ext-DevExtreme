@@ -29,6 +29,8 @@ this.filterOptions = function (options) {
 		for (var i = 0; i < options.columns.length; i++) {
 			if (options.columns[i].cellTemplate) 
 				options.columns[i].cellTemplate = this.initFunction(options.columns[i].cellTemplate);
+			if (options.columns[i].customizeText)
+				options.columns[i].customizeText = this.initFunction(options.columns[i].customizeText);
 		}
 	}
 
