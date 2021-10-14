@@ -139,9 +139,6 @@ namespace Wisej.Web.Ext.DevExtreme
 						widget.Packages.Clear();
 						widget.Recreate();
 					}
-
-					// save the culture on the client side.
-					Application.Eval($"wisej.web.ext.DevExtremeWidget.locale='{value.TwoLetterISOLanguageName}'");
 				}
 			}
 		}
@@ -319,7 +316,7 @@ namespace Wisej.Web.Ext.DevExtreme
 					{
 						this.Packages.AddRange(this.Includes);
 					}
-
+				
 					// load the current locale.
 					var locale = dxBase.Culture.TwoLetterISOLanguageName;
 					if (locale != "en")
@@ -445,7 +442,7 @@ namespace Wisej.Web.Ext.DevExtreme
 		#region Wisej Implementation
 
 		/// <summary>
-		/// Wire the client config to the server
+		/// Wire the client config to the server.
 		/// </summary>
 		/// <param name="config"></param>
 		protected override void OnWebRender(dynamic config)
@@ -453,11 +450,13 @@ namespace Wisej.Web.Ext.DevExtreme
 			base.OnWebRender((object)config);
 
 			config.className = "wisej.web.ext.DevExtremeWidget";
+			
 			config.widgetHtml = this.WidgetHtml;
 			config.widgetClass = this.WidgetClass;
 			config.widgetEvents = this.WidgetEvents;
 			config.widgetFunctions = this.WidgetFunctions;
 			config.widgetTemplates = this.WidgetTemplates;
+			config.culture = Culture.TwoLetterISOLanguageName;
 		}
 
 		#endregion

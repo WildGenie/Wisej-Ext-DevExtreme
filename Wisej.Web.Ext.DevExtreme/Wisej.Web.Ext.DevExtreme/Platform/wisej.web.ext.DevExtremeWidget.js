@@ -37,6 +37,12 @@ qx.Class.define("wisej.web.ext.DevExtremeWidget", {
 	properties: {
 
 		/**
+		 * Widget culture.
+		 * 
+		 */
+		culture: { init: null, check: "String" },
+
+		/**
 		 * WidgetClass property.
 		 *
 		 * The name of the actual dx javascript class.

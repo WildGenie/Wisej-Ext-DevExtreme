@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Collections;
+using System.Globalization;
 using System.Linq;
 using Wisej.Web.Ext.DevExtreme.Test.Component;
 
@@ -57,6 +58,11 @@ namespace Wisej.Web.Ext.DevExtreme.Test
 		{
 			dxBase.Theme = this.comboBox1.Text;
 			Application.Reload();
+		}
+
+		private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			dxBase.Culture = new CultureInfo(this.comboBox2.Text);
 		}
 	}
 }
