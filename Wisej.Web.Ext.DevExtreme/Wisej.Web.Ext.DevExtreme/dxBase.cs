@@ -320,12 +320,6 @@ namespace Wisej.Web.Ext.DevExtreme
 						this.Packages.AddRange(this.Includes);
 					}
 
-					// add custom localization.
-					if (this.Locales != null)
-					{
-						this.Packages.AddRange(this.Locales);
-					}
-
 					// load the current locale.
 					var locale = dxBase.Culture.TwoLetterISOLanguageName;
 					if (locale != "en")
@@ -335,6 +329,12 @@ namespace Wisej.Web.Ext.DevExtreme
 							Name = $"dx.messages.{locale}.js",
 							Source = this.GetResourceURL($"{RESOURCES_ROOT}/js/localization/dx.messages_{locale}.js")
 						});
+					}
+
+					// add custom localization.
+					if (this.Locales != null)
+					{
+						this.Packages.AddRange(this.Locales);
 					}
 				}
 				return packages;

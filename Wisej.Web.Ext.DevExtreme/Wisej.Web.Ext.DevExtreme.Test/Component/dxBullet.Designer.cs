@@ -112,7 +112,7 @@
 			this.label9.AutoSize = true;
 			this.label9.Location = new System.Drawing.Point(8, 36);
 			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(235, 15);
+			this.label9.Size = new System.Drawing.Size(236, 15);
 			this.label9.TabIndex = 0;
 			this.label9.Text = "Note: changes only affect the top widget";
 			// 
@@ -121,7 +121,7 @@
 			this.numericUpDown1.LabelText = "Value";
 			this.numericUpDown1.Location = new System.Drawing.Point(28, 175);
 			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(195, 41);
+			this.numericUpDown1.Size = new System.Drawing.Size(195, 42);
 			this.numericUpDown1.TabIndex = 3;
 			this.numericUpDown1.Value = new decimal(new int[] {
             23,
@@ -134,7 +134,7 @@
 			this.numericUpDown2.LabelText = "Target";
 			this.numericUpDown2.Location = new System.Drawing.Point(28, 232);
 			this.numericUpDown2.Name = "numericUpDown2";
-			this.numericUpDown2.Size = new System.Drawing.Size(195, 41);
+			this.numericUpDown2.Size = new System.Drawing.Size(195, 42);
 			this.numericUpDown2.TabIndex = 4;
 			this.numericUpDown2.Value = new decimal(new int[] {
             20,
@@ -173,7 +173,7 @@
 			this.numericUpDown3.LabelText = "Start Scale Value";
 			this.numericUpDown3.Location = new System.Drawing.Point(28, 289);
 			this.numericUpDown3.Name = "numericUpDown3";
-			this.numericUpDown3.Size = new System.Drawing.Size(195, 41);
+			this.numericUpDown3.Size = new System.Drawing.Size(195, 42);
 			this.numericUpDown3.TabIndex = 5;
 			// 
 			// panel1
@@ -186,14 +186,15 @@
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(348, 27);
 			this.panel1.TabIndex = 1;
+			this.panel1.TabStop = true;
 			// 
 			// dxBullet1
 			// 
 			this.dxBullet1.Dock = Wisej.Web.DockStyle.Fill;
-			this.dxBullet1.Location = new System.Drawing.Point(80, 0);
+			this.dxBullet1.Location = new System.Drawing.Point(65, 0);
 			this.dxBullet1.Name = "dxBullet1";
 			this.dxBullet1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":23,\"target\":20,\"color\":\"#ebdd8f\"}")));
-			this.dxBullet1.Size = new System.Drawing.Size(268, 27);
+			this.dxBullet1.Size = new System.Drawing.Size(283, 27);
 			this.dxBullet1.TabIndex = 7;
 			this.dxBullet1.Text = "dxBullet5";
 			// 
@@ -204,7 +205,7 @@
 			this.label10.Location = new System.Drawing.Point(0, 0);
 			this.label10.Name = "label10";
 			this.label10.Padding = new Wisej.Web.Padding(0, 0, 16, 0);
-			this.label10.Size = new System.Drawing.Size(80, 27);
+			this.label10.Size = new System.Drawing.Size(65, 27);
 			this.label10.TabIndex = 6;
 			this.label10.Text = "Week 1";
 			this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -219,14 +220,15 @@
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(348, 27);
 			this.panel2.TabIndex = 8;
+			this.panel2.TabStop = true;
 			// 
 			// dxBullet2
 			// 
 			this.dxBullet2.Dock = Wisej.Web.DockStyle.Fill;
-			this.dxBullet2.Location = new System.Drawing.Point(80, 0);
+			this.dxBullet2.Location = new System.Drawing.Point(65, 0);
 			this.dxBullet2.Name = "dxBullet2";
 			this.dxBullet2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":24,\"target\":22,\"color\":\"#e55253\"}")));
-			this.dxBullet2.Size = new System.Drawing.Size(268, 27);
+			this.dxBullet2.Size = new System.Drawing.Size(283, 27);
 			this.dxBullet2.TabIndex = 7;
 			this.dxBullet2.Text = "dxBullet6";
 			// 
@@ -237,7 +239,7 @@
 			this.label11.Location = new System.Drawing.Point(0, 0);
 			this.label11.Name = "label11";
 			this.label11.Padding = new Wisej.Web.Padding(0, 0, 16, 0);
-			this.label11.Size = new System.Drawing.Size(80, 27);
+			this.label11.Size = new System.Drawing.Size(65, 27);
 			this.label11.TabIndex = 6;
 			this.label11.Text = "Week 2";
 			this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -252,14 +254,15 @@
 			this.panel3.Name = "panel3";
 			this.panel3.Size = new System.Drawing.Size(348, 27);
 			this.panel3.TabIndex = 9;
+			this.panel3.TabStop = true;
 			// 
 			// dxBullet3
 			// 
 			this.dxBullet3.Dock = Wisej.Web.DockStyle.Fill;
-			this.dxBullet3.Location = new System.Drawing.Point(80, 0);
+			this.dxBullet3.Location = new System.Drawing.Point(65, 0);
 			this.dxBullet3.Name = "dxBullet3";
 			this.dxBullet3.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":35,\"target\":24,\"color\":\"#ebdd8f\"}")));
-			this.dxBullet3.Size = new System.Drawing.Size(268, 27);
+			this.dxBullet3.Size = new System.Drawing.Size(283, 27);
 			this.dxBullet3.TabIndex = 8;
 			this.dxBullet3.Text = "dxBullet7";
 			// 
@@ -270,7 +273,7 @@
 			this.label12.Location = new System.Drawing.Point(0, 0);
 			this.label12.Name = "label12";
 			this.label12.Padding = new Wisej.Web.Padding(0, 0, 16, 0);
-			this.label12.Size = new System.Drawing.Size(80, 27);
+			this.label12.Size = new System.Drawing.Size(65, 27);
 			this.label12.TabIndex = 6;
 			this.label12.Text = "Week 3";
 			this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -285,14 +288,15 @@
 			this.panel4.Name = "panel4";
 			this.panel4.Size = new System.Drawing.Size(348, 27);
 			this.panel4.TabIndex = 8;
+			this.panel4.TabStop = true;
 			// 
 			// dxBullet4
 			// 
 			this.dxBullet4.Dock = Wisej.Web.DockStyle.Fill;
-			this.dxBullet4.Location = new System.Drawing.Point(80, 0);
+			this.dxBullet4.Location = new System.Drawing.Point(65, 0);
 			this.dxBullet4.Name = "dxBullet4";
 			this.dxBullet4.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":29,\"target\":25,\"color\":\"#e55253\"}")));
-			this.dxBullet4.Size = new System.Drawing.Size(268, 27);
+			this.dxBullet4.Size = new System.Drawing.Size(283, 27);
 			this.dxBullet4.TabIndex = 9;
 			this.dxBullet4.Text = "dxBullet8";
 			// 
@@ -303,7 +307,7 @@
 			this.label13.Location = new System.Drawing.Point(0, 0);
 			this.label13.Name = "label13";
 			this.label13.Padding = new Wisej.Web.Padding(0, 0, 16, 0);
-			this.label13.Size = new System.Drawing.Size(80, 27);
+			this.label13.Size = new System.Drawing.Size(65, 27);
 			this.label13.TabIndex = 6;
 			this.label13.Text = "Week 4";
 			this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
